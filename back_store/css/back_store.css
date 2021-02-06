@@ -1,0 +1,150 @@
+*{
+    margin:0;
+    padding: 0;
+
+}
+/*logout*/
+.username{
+
+    list-style: none;
+}
+.username li{
+    display: inline-block;
+    position: relative;
+    line-height:16px;
+    text-align: right;
+    float: right;
+}
+.username li a{
+    display: block;
+    padding: 8px 25px;
+    color: #F0C38E;
+    text-decoration: none;
+}
+.username li a:hover{
+    color: #F1AA9B;
+}
+.username li ul.dropdown{
+    min-width: 125px; /* Set width of the dropdown */
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+}
+.username li:hover ul.dropdown{
+    display: block; /* Display the dropdown */
+}
+.username li ul.dropdown li{
+    display: block;
+}
+body{
+    background-color: #3c3c3c;
+}
+/*header*/
+.header{
+    background-color: #3c3c3c;
+    height: 20%;
+    color: #cccccc;
+    width: 100%;
+}
+.title{
+    padding: 8px 16px;
+}
+.user{
+    padding-top: 10px;
+    margin-right: 20px;
+}
+
+/*aside navbar*/
+.aside{
+    background-color: #3c3c3c;
+    height: 680px;
+    text-align: left;
+    float: left;
+    padding: 50px 30px;
+    font-size: large;
+    clear: both;
+}
+.aside .nav-link{
+    color: #F0C38E;
+}
+.aside .nav-link:hover{
+    color: #F1AA9B;
+}
+/*main information*/
+.main{
+    background-color: #e9ecef ;
+    height: auto;
+    float: left;
+    margin-top: 30px;
+}
+.breadcrumb{
+    margin-bottom: 0%;
+}
+/*responsive table*/
+@media
+only screen
+and (max-width: 760px), (min-device-width: 375px)
+and (max-device-width: 1024px)  {
+
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        margin: 0 0 1rem 0;
+    }
+
+    tr:nth-child(odd) {
+        background: #ccc;
+    }
+
+    td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    /*Label the data*/
+    td:nth-of-type(1):before { content: "#: "; }
+    td:nth-of-type(2):before { content: "Username: "; }
+    td:nth-of-type(3):before { content: "Last name: "; }
+    td:nth-of-type(4):before { content: "First name: "; }
+    td:nth-of-type(5):before { content: "Email: "; }
+    td:nth-of-type(6):before { content: ""; }
+}
+
+/*confirm button*/
+.btn-adduser{
+   margin: 10px 20px 20px 20px;
+}
+
+.confirm_button{
+    margin-bottom: 10%;
+}
+
+/*footer*/
+.footer{
+    background-color:#3c3c3c;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    clear: both;
+    text-align: center;
+    color: #cccccc;
+    padding-top: 10px;
+    font-size: small;
+    overflow: auto;
+}
