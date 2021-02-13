@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruits and Vegetables</title>
+    <!--  CSS Stylesheets-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fruits_vegs.css">
+
+    <!--  Font Awesome-->
+    <script src="https://kit.fontawesome.com/5e7c980afc.js" crossorigin="anonymous"></script>
+
+    <!--  Bootstrap Scripts-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--header-->
+    <div class="row">
+        <div class="header">
+            <img src="img/tomato.png" class="img-fluid" alt="Responsive image" width="80px">
+            <span class="title navbar-brand"><h1>Fast Groceries</h1></span>
+            <a class="login" href="#">Login| </a>
+            <a class="register" href="#">&nbsp |Register</a>
+        </div>
+    </div>
+<!--navigation-->
+<div class="main">
+        <div class="row">
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-8">
+            <nav class="navbar navbar-expand-lg bg-c05555">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span>Navigation</span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">&nbsp HOME &nbsp<span class="sr-only">(current)</span></a>
+                        </li>
+                        <a class="nav-link" href="#">&nbsp ALL PRODUCTS &nbsp</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                AISLES
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Dairy & Eggs</a>
+                                <a class="dropdown-item" href="#">Fruits & Vegetables</a>
+                                <a class="dropdown-item" href="#">Fish & Seafood</a>
+                                <a class="dropdown-item" href="#">Meat & Poultry</a>
+                                <a class="dropdown-item" href="#">Beverages</a>
+                                <a class="dropdown-item" href="#">Beer & Wine</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">More...</a>
+                            </div>
+                        </li>
+
+                        <a class="nav-link" href="#">&nbsp CART &nbsp</a>
+
+
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button type="button" class="btn btn-warning">Search</button>
+                    </form>
+                </div>
+            </nav>
+
+<!-- sidebar-->
+            <div class="aside col-lg-3  d-none d-lg-block ">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="sidebar list-group-item list-group-item-action" href=""><i class="fas fa-egg"></i> Dairy & Eggs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="sidebar list-group-item list-group-item-action" href=""><i class="fas fa-lemon"></i> Fruits & Vegetables</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="sidebar list-group-item list-group-item-action" href=""><i class="fas fa-fish"></i> Fish & Seafood</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="sidebar list-group-item list-group-item-action" href=""><i class="fas fa-bacon"></i> Meat & Poultry</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="sidebar list-group-item list-group-item-action" href=""><i class="fas fa-mug-hot"></i> Beverages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="sidebar list-group-item list-group-item-action" href=""><i class="fas fa-wine-glass-alt"></i> Beer & Wine</a>
+                    </li>
+                </ul>
+            </div>
+
+                <!--show product category name-->
+            <section class="content">
+                <div class="row">
+                    <span class="subtitle"><h2>Fruits & Vegetables</h2></span>
+                </div>
+                <!--Items list -->
+                <div class="row">
+                    <div class="col-sm align-self-start">
+                        <a href="fv_lime.html">
+                            <img class="itemImg img-fluid animated fadeInUp" src="img/fruits_vegetable/10001.png" alt="" href="#">
+                        </a>
+                        <p class="item">Lime per unit $0.33</p>
+                        <div class="input-group">
+                            <input type="button" value="-" class="button-minus" data-field="quantity">
+                            <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+                            <input type="button" value="+" class="button-plus" data-field="quantity">
+                        </div>
+                        <button type="button" class="btn btn-danger">Add to Cart</button>
+                    </div>
+                    <div class="col-sm align-self-start">
+                        <a href="fv_banana.html">
+                        <img class="itemImg img-fluid animated fadeInUp" src="img/fruits_vegetable/10002.png" alt="" href="#">
+                        </a>
+                        <p class="item">Banana per unit $0.66</p>
+                        <div class="input-group">
+                            <input type="button" value="-" class="button-minus" data-field="quantity">
+                            <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+                            <input type="button" value="+" class="button-plus" data-field="quantity">
+                        </div>
+                        <button type="button" class="btn btn-danger">Add to Cart</button>
+                    </div>
+                    <div class="col-sm align-self-start">
+                        <a href="fv_apple.html">
+                        <img class="itemImg img-fluid animated fadeInUp" src="img/fruits_vegetable/10003.png" alt="" href="#">
+                        </a>
+                        <p class="item">Apple per unit $0.66</p>
+                        <div class="input-group">
+                            <input type="button" value="-" class="button-minus" data-field="quantity">
+                            <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+                            <input type="button" value="+" class="button-plus" data-field="quantity">
+                        </div>
+                        <button type="button" class="btn btn-danger">Add to Cart</button>
+                    </div>
+                </div>
+                <!--second row-->
+                <div class="row">
+                    <div class="col-sm align-self-start">
+                        <a href="ve_pepper.html">
+                        <img class="itemImg img-fluid animated fadeInUp" src="img/fruits_vegetable/10004.png" alt="" href="#">
+                        </a>
+                        <p class="item">Pepper per unit $0.33</p>
+                        <div class="input-group">
+                            <input type="button" value="-" class="button-minus" data-field="quantity">
+                            <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+                            <input type="button" value="+" class="button-plus" data-field="quantity">
+                        </div>
+                        <button type="button" class="btn btn-danger">Add to Cart</button>
+                    </div>
+                    <div class="col-sm align-self-start">
+                        <a href="ve_broccoli.html">
+                        <img class="itemImg img-fluid animated fadeInUp" src="img/fruits_vegetable/10005.png" alt="" href="#">
+                        </a>
+                        <p class="item">Broccoli per unit $1.78</p>
+                        <div class="input-group">
+                            <input type="button" value="-" min="1" class="button-minus" data-field="quantity">
+                            <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+                            <input type="button" value="+" class="button-plus" data-field="quantity">
+                        </div>
+                        <button type="button" class="btn btn-danger">Add to Cart</button>
+                    </div>
+                    <div class="col-sm align-self-start">
+                        <a href="ve_onion.html">
+                        <img class="itemImg img-fluid animated fadeInUp" src="img/fruits_vegetable/10006.png" alt="" href="#">
+                        </a>
+                        <p class="item">Onion per unit $0.50</p>
+                        <div class="input-group">
+                            <input type="button" value="-" class="button-minus" data-field="quantity">
+                            <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+                            <input type="button" value="+" class="button-plus" data-field="quantity">
+                        </div>
+                        <button type="button" class="btn btn-danger">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+            <div class="col-lg-2">
+            </div>
+        </div>
+</div>
+<!--footer-->
+<div id="footer">
+    <div class="row">
+        <div class="col-sm">
+            <a class="footerText "href="#">ABOUT</a>
+        </div>
+        <div class="col-sm">
+            <a class="footerText "href="#">CONTACT US</a>
+        </div>
+        <div class="col-sm">
+            <p>Copyright &copy Fast groceries &nbsp; Technical support: 514 555 1234 </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
