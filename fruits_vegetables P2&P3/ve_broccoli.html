@@ -78,10 +78,16 @@
                     <p>sold individually</p>
                     <p>$1.78/un</p>
                     <h6>Quantity</h6>
-                    <div class="input-group">
-                        <input type="button" value="-" class="button-minus" data-field="quantity">
-                        <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
-                        <input type="button" value="+" class="button-plus" data-field="quantity">
+                    <div>
+                        <div class="def-number-input number-input mb-0 w-100">
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus">
+                                -
+                            </button>
+                            <input class="quantity" min="1" name="quantity" value="1" type="number"/>
+                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">
+                                +
+                            </button>
+                        </div>
                     </div>
                     <button type="button" class="btn btn-danger" style="width:30%;">Add to Cart</button>
                     <br/>

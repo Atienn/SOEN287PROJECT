@@ -8,10 +8,10 @@ body{
     margin-top: 30px;
 }
 
-.input-group .button-minus{
-    margin-left: 0px;
-}
-
 .product_description{
     margin-top: 30px;
+}
+
+.btn-danger{
+   margin-top: 10px;
 }
