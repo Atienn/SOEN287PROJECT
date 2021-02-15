@@ -1,0 +1,314 @@
+html{
+    background-color: #3c3c3c;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+    "Helvetica Neue",Arial,sans-serif,"Apple Color Emoji",
+    "Segoe UI Emoji","Segoe UI Symbol";
+}
+
+/* Header Styling */
+.header{
+    color:#cccccc;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.header .left-screen{
+    font-size: 1.25rem;
+    float: left;
+ }
+
+ .username{
+    list-style: none;
+    margin-right: 50px;
+}
+.username li{
+    display: inline-block;
+    position: relative;
+    line-height:16px;
+    text-align: right;
+    float: right;
+}
+.dropdown li a{
+    display: block;
+    padding: 8px 25px;
+    color: #F0C38E;
+    text-decoration: none;
+}
+.username li a:hover{
+    color: #F1AA9B;
+}
+.username li ul.dropdown{
+    min-width: 125px;
+    display: none;
+    position: absolute;
+    right: -10px;
+   
+}
+
+.username li:hover ul.dropdown{
+    display: block; 
+}
+
+.username li ul.dropdown li{
+    display: block;
+}
+
+/* --End Header Styling */
+
+/* Site navigation menu */
+.site-nav{
+    float: left;
+ }
+
+.site-nav ul{
+   margin-top: 70px;
+   padding-left: 15px;
+}
+
+.site-nav li{
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 115%;
+
+}
+
+.site-nav a:hover{
+    color: #F1AA9B;
+}
+
+.site-nav a{
+    text-decoration: none;
+    color: #F0C38E;
+}
+
+i{
+    margin-right: 5px;
+}
+/* --End site navigation menu */
+
+/* Center Area Styling */
+.center-area{
+    position: relative;
+    background-color: #e9ecef;
+    margin-top: 40px;
+    width: 1210px;
+    height: 651px;
+    margin-left: 220px;
+    border: 3px solid black;
+    border-radius: 30px;
+    box-sizing: border-box;
+    
+}
+
+/* Aside nav styling */
+
+.aside-nav{
+    padding: 0;
+    margin: 0;
+    height: 50px;
+}
+
+.aside-nav span{
+    color: rgb(134, 131, 131);
+}
+
+.aside-nav ul{
+    list-style: none;
+}
+
+.aside-nav li{
+    float: left;
+}
+
+.aside-nav a{
+    text-decoration: none;
+    padding-right: 5px;
+    box-sizing: border-box;
+    color: blue;
+    
+}
+
+/* --End Aside nav styling */
+
+/* Product Image Styling */
+
+.product-image{
+    float: left;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+
+/* --End Product Image Styling */
+
+form{
+    position:absolute;
+    padding-left: 50px;
+    right: 40px;
+    width: 60%;
+    height: 80%;
+    box-sizing: border-box;
+}
+
+.product{
+   padding-top: 10px;
+   margin-bottom: 20px;
+   font-size: 160%;
+ }
+
+.secondary-desc{
+    max-width: 60%;
+    border-bottom: 3px solid rgb(0, 0, 0, 0.4);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.main-desc{
+    max-width: 60%;
+    border-bottom: 3px solid rgb(0, 0, 0, 0.4);
+    padding-bottom: 20px;
+}
+
+textarea{
+   margin-top: 20px;
+   height: 50px;
+   width: 235px;
+   box-sizing: border-box;
+}
+
+
+input,
+textarea{
+   border: none;
+   appearance: none;
+   background: rgb(230, 224, 224);
+   padding: 12px;
+   border-radius: 3px;
+   outline: none;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder{
+    color: transparent;
+}
+
+input::placeholder,
+textarea::placeholder{
+    transition: color 0.3s ease;
+}
+
+.price{
+    max-width: 60%;
+    border-bottom: 3px solid rgb(0, 0, 0, 0.4);
+    padding-bottom: 20px;
+    margin-top: 30px;
+    font-size: 160%;
+}
+
+.quantity-btn{
+    max-width: 60%;
+    border-bottom: 3px solid rgb(0, 0, 0, 0.4);
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 160%;
+}
+
+.quantity-btn input{
+    width: 40px;
+    height: 15px;
+    border-radius: 4px;
+}
+
+.quantity-btn input:hover,
+.price input:hover{
+    background-color: rgb(224, 213, 176);
+}
+
+.reset-btn{
+    margin-top: 70px;
+    margin-left: 400px;
+    width: 120px;
+    height: 40px;
+    bottom: 5px;
+    right: 150px;
+    color: #fff;
+    font-size: large;
+    background-color: #343a40;
+    border-radius: .25rem;
+}
+
+.save-btn{
+    margin-top: 70px;
+    width: 120px;
+    height: 40px;
+    background-color: rgb(240, 186, 38);
+    border-radius: .25rem;
+    font-size: large;
+}
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+} 
+.group:after {
+  clear: both;
+}
+.group {
+  zoom: 1; 
+}
+/* --End Center Area Styling */
+
+.footer{
+    background-color:#3c3c3c;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    clear: both;
+    text-align: center;
+    color: #cccccc;
+    padding-top: 10px;
+    font-size: small;
+    overflow: auto;
+}
+
+@media
+only screen and (max-width: 760px), (min-device-width: 375px)
+and (max-device-width: 1024px){
+
+    .center-area{
+        margin-left:0;
+        width: 130%;
+        height: 1100px;
+    }
+
+    .product-image{
+        float: none;
+    }
+
+   form{
+        position: static;
+        font-size: 13px;
+        width: 90%;
+    }
+
+    .product{
+        margin-top: 20px;
+    }
+
+    .site-nav{
+        float: none;
+    }
+
+    .reset-btn{
+        margin-left: 50px;
+    }
+} 
+
+     
+ 
+     
+ 
+ 
