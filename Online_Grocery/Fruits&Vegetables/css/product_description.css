@@ -1,0 +1,17 @@
+
+body{
+    overflow: scroll;
+}
+
+.product{
+    min-height: 70vh;
+    margin-top: 30px;
+}
+
+.product_description{
+    margin-top: 30px;
+}
+
+.btn-danger{
+   margin-top: 10px;
+}
