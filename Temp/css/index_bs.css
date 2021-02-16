@@ -1,0 +1,24 @@
+section h3{
+    color: #3c3c3c;
+    margin: 20px;
+}
+
+section .item-bar{
+    text-align: center;
+    margin-top: 50px;
+    height: 100%;
+    margin-bottom: 50px;
+}
+section i{
+    color: #30475e;
+    font-size: 3rem;
+}
+
+section i:hover{
+    color: #F1AA9B;
+}
+section p{
+    margin-top: 1rem;
+    color: #30475e;
+    font-weight: bolder;
+}
