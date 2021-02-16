@@ -1,3 +1,3 @@
 # SOEN287PROJECT
 
-Repository for the webpage project of SOEN 287.
+Repository for the website project of SOEN 287.
