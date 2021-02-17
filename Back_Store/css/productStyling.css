@@ -1,0 +1,27 @@
+
+body{
+    overflow: scroll;
+}
+
+.product{
+    min-height: 70vh;
+    margin-top: 30px;
+}
+
+.adjust{
+    height: 250px;
+    width: 350px;
+    margin-left: 50px;
+}
+
+.input-group .button-minus{
+    margin-left: 0px;
+}
+
+.product_description{
+    margin-top: 30px;
+}
+
+.btn-danger{
+    margin-top: 10px;
+}
