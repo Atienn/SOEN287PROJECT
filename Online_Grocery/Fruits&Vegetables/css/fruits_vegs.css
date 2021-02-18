@@ -58,6 +58,14 @@ body {
   text-align: center;
 }
 
+/*sticy navigation bar, put this div before nav div*/
+.navbarSticky {
+  z-index: 999;
+  position: absolute;
+  position: sticky;
+  top: 0;
+}
+
 .nav-link {
   color: white;
   background-color: #c05555;
