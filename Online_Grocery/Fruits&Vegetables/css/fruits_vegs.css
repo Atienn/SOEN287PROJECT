@@ -1,205 +1,202 @@
-html,body{
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
-body{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+body {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 /*header*/
-.header{
-    background-color: #ffc85c;
-    height: 150px;
-    color: #c05555;
-    font-style: italic;
-    text-align: center;
-    width: 100%;
-    padding: 20px 10px;
+.header {
+  background-color: #ffc85c;
+  height: 150px;
+  color: #c05555;
+  font-style: italic;
+  text-align: center;
+  width: 100%;
+  padding: 20px 10px;
 }
 
-.login{
-    position: absolute;
-    font-size: 20px;
-    font-style: italic;
-    color: #59886b;
-    top: 1;
-    right: 10px;
-    width: 20%;
-    margin-right: 70px;
+.login {
+  position: absolute;
+  margin-right: 10px;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: #59886b;
+  top: 1;
+  right: 10px;
+  width: 20%;
 }
 
-.register{
-    position: absolute;
-    font-size: 20px;
-    font-style: italic;
-    color: #59886b;
-    top: 1;
-    right: 10px;
-    width: 10%;
+.Register {
+  position: absolute;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: #59886b;
+  top: 1;
+  right: 10px;
+  width: 10%;
 }
 
-.navbar{
-    background-color: #c05555;
-    height: 100px;
-    color: #c05555;
-    text-align: center;
-    width: 100%;
-    position: relative;
-    z-index: 999;
+.navbar {
+  background-color: #c05555;
+  height: 100px;
+  color: #c05555;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  z-index: 999;
 }
 
-.btn{
-    color: #fff8c1;
+.btn {
+  color: #fff8c1;
 }
 
-.navbar-nav{
-    text-align: center;
+.navbar-nav {
+  text-align: center;
 }
 
-.nav-link{
-    color: white;
-    background-color: #c05555;
-    font-size: large;
-    font-style: italic;
-    text-align: center;
+.nav-link {
+  color: white;
+  background-color: #c05555;
+  font-size: large;
+  font-style: italic;
+  text-align: center;
 }
 
-.form-inline{
-    margin-right: 10px;
+.form-inline {
+  margin-right: 10px;
 }
 
-.nav-link.dropdown-toggle{
-    color: white;
-    font-size: large;
-    font-style: italic;
-    text-align: center;
+.nav-link.dropdown-toggle {
+  color: white;
+  font-size: large;
+  font-style: italic;
+  text-align: center;
 }
 
-.navbar-toggler{
-    background-color: pink;
-    width: 100%;
-    text-align: center;
+.navbar-toggler {
+  background-color: pink;
+  width: 100%;
+  text-align: center;
 }
-
 
 .topnav-right {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 /*aside navbar*/
-.aside{
-    background-color: #ffe8e8;
-    height: 100vh;
-    text-align: left;
-    float: left;
-    padding: 50px 30px;
-    font-size: large;
+.aside {
+  background-color: #ffe8e8;
+  height: 100vh;
+  text-align: left;
+  float: left;
+  padding: 50px 30px;
+  font-size: large;
 }
 
-.sidebar{
-    color: #c05555;
-    font-size: large;
-    font-style: italic;
-
+.sidebar {
+  color: #c05555;
+  font-size: large;
+  font-style: italic;
 }
-
 
 /*body*/
-.subtitle{
-    Color: #c05555;
-    width: 100%;
+.subtitle {
+  color: #c05555;
+  width: 100%;
 }
 
-.input-group .button-minus{
-    margin-left: 30%;
-    background-color: #c05555;
-    color: white;
-    width: 8%;
+.input-group .button-minus {
+  margin-left: 30%;
+  background-color: #c05555;
+  color: white;
+  width: 8%;
 }
-.input-group .quantity-field{
-    width: 40px;
-    text-align: center;
+.input-group .quantity-field {
+  width: 40px;
+  text-align: center;
 }
-.input-group .button-plus{
- background-color: #3c3c3c;
-    color: white;
+.input-group .button-plus {
+  background-color: #3c3c3c;
+  color: white;
 }
-.input-group{
-    margin-bottom: 15px;
-}
-
-.homeImg1{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+.input-group {
+  margin-bottom: 15px;
 }
 
-.homeImg2{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-    width: 80%;
+.homeImg1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.homeImg2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
+  width: 80%;
 }
 
 /* Submenu item*/
-.submenu{
-    background-color: #ffc85c;
-    color: #000000;
-    font-style: italic;
+.submenu {
+  background-color: #ffc85c;
+  color: #000000;
+  font-style: italic;
 }
 
-.subsubmenu{
-    background-color: #fff8c1;
-    color: #000000;
-    font-style: italic;
+.subsubmenu {
+  background-color: #fff8c1;
+  color: #000000;
+  font-style: italic;
 }
-#main{
-    flex: 1;
+#main {
+  flex: 1;
 }
 
 /*item list*/
-.item{
-    font-size: 16px;
-    font-style: bold;
-    color: #c05555;
-    position: relative;
-    bottom: 0;
-    text-align: center;
-    width: 100%;
+.item {
+  font-size: 16px;
+  font-style: bold;
+  color: #c05555;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
 }
-.itemImg{
-    position: relative;
-    top: 0;
-    width: 100%;
-    border: 1px black;
-    padding: 10px;
+.itemImg {
+  position: relative;
+  top: 0;
+  width: 100%;
+  border: 1px black;
+  padding: 10px;
 }
-.btn.btn-danger{
-    width: 100%
+.btn.btn-danger {
+  width: 100%;
 }
-section{
-    margin-bottom: 20px;
+section {
+  margin-bottom: 20px;
 }
 
 /*footer*/
-.footerText{
-    color: #fff8c1;
-    font-style: italic;
-    font-size: 18px;
+.footerText {
+  color: #fff8c1;
+  font-style: italic;
+  font-size: 18px;
 }
 
-
-#footer{
-    height: 100px;
-    background-color:#59886b;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    color: #cccccc;
-    padding-top: 10px;
-    font-size: small;
+#footer {
+  height: 100px;
+  background-color: #59886b;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #cccccc;
+  padding-top: 10px;
+  font-size: small;
 }

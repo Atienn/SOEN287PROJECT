@@ -1,131 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pepper</title>
     <!--  CSS Stylesheets-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/fruits_vegs.css">
-    <link rel="stylesheet" href="css/product_description.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/fruits_vegs.css" />
+    <link rel="stylesheet" href="css/product_description.css" />
 
     <!--  Font Awesome-->
-    <script src="https://kit.fontawesome.com/5e7c980afc.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/5e7c980afc.js"
+      crossorigin="anonymous"
+    ></script>
 
     <!--  Bootstrap Scripts-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</head>
-<body>
-<!--header-->
-<div class="row">
-    <div class="header">
-        <img src="img/tomato.png" class="img-fluid" alt="Responsive image" width="80px">
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--header-->
+    <div class="row">
+      <div class="header">
+        <img
+          src="img/tomato.png"
+          class="img-fluid"
+          alt="Responsive image"
+          width="80px"
+        />
         <span class="title navbar-brand"><h1>Fast Groceries</h1></span>
-        <a class="login" href="#">Login| </a>
-        <a class="register" href="#">&nbsp |Register</a>
+        <a class="login" href="/SOEN287PROJECT/Auth/LoginPage.html">Login</a>
+        <a class="Register" href="/SOEN287PROJECT/Auth/SignUpPage.html"
+          >&nbsp Register</a
+        >
+      </div>
     </div>
-</div>
-<!--navigation-->
-<div class="main">
-    <div class="row">
-        <div class="col-lg-2">
-        </div>
+    <!--navigation-->
+    <div class="main">
+      <div class="row">
+        <div class="col-lg-2"></div>
         <div class="col-lg-8">
-            <nav class="navbar navbar-expand-lg bg-c05555">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span>Navigation</span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">&nbsp HOME &nbsp<span class="sr-only">(current)</span></a>
-                        </li>
-                        <a class="nav-link" href="#">&nbsp ALL PRODUCTS &nbsp</a>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                AISLES
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Dairy & Eggs</a>
-                                <a class="dropdown-item" href="#">Fruits & Vegetables</a>
-                                <a class="dropdown-item" href="#">Fish & Seafood</a>
-                                <a class="dropdown-item" href="#">Meat & Poultry</a>
-                                <a class="dropdown-item" href="#">Beverages</a>
-                                <a class="dropdown-item" href="#">Beer & Wine</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">More...</a>
-                            </div>
-                        </li>
+          <nav class="navbar navbar-expand-lg bg-c05555">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span>Navigation</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#"
+                    >&nbsp HOME &nbsp<span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <a class="nav-link" href="#">&nbsp ALL PRODUCTS &nbsp</a>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    AISLES
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Dairy & Eggs</a>
+                    <a class="dropdown-item" href="#">Fruits & Vegetables</a>
+                    <a class="dropdown-item" href="#">Fish & Seafood</a>
+                    <a class="dropdown-item" href="#">Meat & Poultry</a>
+                    <a class="dropdown-item" href="#">Beverages</a>
+                    <a class="dropdown-item" href="#">Beer & Wine</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">More...</a>
+                  </div>
+                </li>
 
-                        <a class="nav-link" href="#">&nbsp CART &nbsp</a>
-
-
-                    </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button type="button" class="btn btn-warning">Search</button>
-                    </form>
-                </div>
-            </nav>
-            <div class="row product">
-                <div class="col-sm align-self-start">
-                    <img class="itemImg img-fluid animated fadeInUp" src="img/fruits_vegetable/10004.png" alt="" width="400">
-                </div>
-                <div class="col-sm align-self-start">
-                    <h3>Pepper</h3>
-                    <p>sold individually</p>
-                    <p>$0.33/un</p>
-                    <h6>Quantity</h6>
-                    <div>
-                        <div class="def-number-input number-input mb-0 w-100">
-                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus">
-                                -
-                            </button>
-                            <input class="quantity" min="1" name="quantity" value="1" type="number"/>
-                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">
-                                +
-                            </button>
-                        </div>
-                    </div>
-                    <button type="button" class="btn btn-danger" style="width:30%;">Add to Cart</button>
-                    <br/>
-                    <div class="product_description">
-                        <h3>Product description</h3>
-                        <p>All varieties are excellent sources of vitamins A and C, potassium, folic acid, and fiber. </p>
-                        <p>
-                            <a class="btn btn-dark" data-toggle="collapse" href="#moreDescription" role="button" aria-expanded="false" aria-controls="collapseExample">
-                                More description
-                            </a>
-                        </p>
-                        <div class="collapse" id="moreDescription">
-                            <div class="card card-body">
-                                #item No.10004
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <a class="nav-link" href="#">&nbsp CART &nbsp</a>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input
+                  class="form-control mr-sm-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button type="button" class="btn btn-warning">Search</button>
+              </form>
             </div>
-
+          </nav>
+          <div class="row product">
+            <div class="col-sm align-self-start">
+              <img
+                class="itemImg img-fluid animated fadeInUp"
+                src="img/fruits_vegetable/10004.png"
+                alt=""
+                width="400"
+              />
+            </div>
+            <div class="col-sm align-self-start">
+              <h3>Pepper</h3>
+              <p>sold individually</p>
+              <p>$0.33/un</p>
+              <h6>Quantity</h6>
+              <div>
+                <div class="def-number-input number-input mb-0 w-100">
+                  <button
+                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                    class="minus"
+                  >
+                    -
+                  </button>
+                  <input
+                    class="quantity"
+                    min="1"
+                    name="quantity"
+                    value="1"
+                    type="number"
+                  />
+                  <button
+                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                    class="plus"
+                  >
+                    +
+                  </button>
+                </div>
+              </div>
+              <button type="button" class="btn btn-danger" style="width: 30%">
+                Add to Cart
+              </button>
+              <br />
+              <div class="product_description">
+                <h3>Product description</h3>
+                <p>
+                  All varieties are excellent sources of vitamins A and C,
+                  potassium, folic acid, and fiber.
+                </p>
+                <p>
+                  <a
+                    class="btn btn-dark"
+                    data-toggle="collapse"
+                    href="#moreDescription"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
+                    More description
+                  </a>
+                </p>
+                <div class="collapse" id="moreDescription">
+                  <div class="card card-body">#item No.10004</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-lg-2">
-        </div>
+        <div class="col-lg-2"></div>
+      </div>
     </div>
-</div>
-<!--footer-->
-<div id="footer">
-    <div class="row">
+    <!--footer-->
+    <div id="footer">
+      <div class="row">
         <div class="col-sm">
-            <a class="footerText "href="#">ABOUT</a>
+          <a class="footerText" href="#">ABOUT</a>
         </div>
         <div class="col-sm">
-            <a class="footerText "href="#">CONTACT US</a>
+          <a class="footerText" href="#">CONTACT US</a>
         </div>
         <div class="col-sm">
-            <p>Copyright &copy Fast groceries &nbsp; Technical support: 514 555 1234 </p>
+          <p>
+            Copyright &copy Fast groceries &nbsp; Technical support: 514 555
+            1234
+          </p>
         </div>
+      </div>
     </div>
-</div>
-</body>
+  </body>
 </html>
