@@ -205,6 +205,13 @@ body {
   padding: 10px;
 }
 
+/*
+Add to cart button class.
+*/
+.btn.btn-danger.cart-btn {
+  z-index: initial;
+}
+
 .btn.btn-danger {
   position: relative;
   width: 100%;
