@@ -223,6 +223,7 @@ section {
 }
 
 .footer {
+  margin-top: 10px;
   background-color: #59886b;
   position: absolute;
   bottom: 0;

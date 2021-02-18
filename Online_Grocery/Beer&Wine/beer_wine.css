@@ -181,14 +181,15 @@ body {
   font-size: 18px;
 }
 
-#footer {
-  height: 100px;
+.footer {
   background-color: #59886b;
+  position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
+  height: 50px;
+  clear: both;
   text-align: center;
   color: #cccccc;
-  padding-top: 10px;
   font-size: small;
 }
