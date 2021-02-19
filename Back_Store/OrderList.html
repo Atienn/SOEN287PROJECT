@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Order List</title>
+
+    <!-- CSS Styling -->
+    <link rel="stylesheet" href="css/back_store.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/5e7c980afc.js" crossorigin="anonymous"></script>
+    
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header group">
+        <div class="left-screen">Fast Groceries Administration</div>
+        <div class="right-screen">
+            <div class="username">
+                <ul class="user">
+                    <li>
+                        <a><i class="far fa-user-circle"></i> Username</a>
+                        <ul class="dropdown">
+                            <li><a href="admin_sign_in.html">Log out</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <nav class="site-nav">
+        <ul class="group">
+            <li><a href="index_bs.html"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="OrderList.html"><i class="fab fa-first-order-alt" aria-hidden="true"></i>Orders</a></li>
+            <li><a href="#"><i class="fas fa-chart-bar" aria-hidden="true"></i>View Products</a></li>
+            <li><a href="admin_products.html"><i class="fas fa-cart-plus" aria-hidden="true"></i>Add Product</a></li>
+            <li><a href="users_list.html"><i class="fas fa-users" aria-hidden="true"></i>Users</a></li>
+        </ul>
+    </nav>
+    <div class="center-area">
+
+        <!-- Shows the user where they are in the website. -->
+        <nav class="aside-nav">
+            <ul class="group">
+                <li><a href="index_bs.html">Home</a><span> / &nbsp;</span></li>
+                <li>Order List</li>
+            </ul>
+        </nav>
+
+        <table>
+            <thead>
+                <th>Ordered By</th>
+                <th>Ordered On</th>
+                <th>I.D. Number</th>
+                <th></th>
+            </thead>
+            <tr>
+                <td>Peter Serafinowicz</td>
+                <td>2021-02-12</td>
+                <td>#421481</td>
+                <td>
+                    <button type="button" class="edit-btn">Edit Order</button>
+                    <button type="button" class="cancel-btn">Delete Order</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Linus Sebastian</td>
+                <td>2021-02-2</td>
+                <td>#421482</td>
+                <td>
+                    <button type="button" class="edit-btn">Edit Order</button>
+                    <button type="button" class="cancel-btn">Delete Order</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Jeremy Elbertson</td>
+                <td>2021-01-30</td>
+                <td>#421483</td>
+                <td>
+                    <button type="button" class="edit-btn">Edit Order</button>
+                    <button type="button" class="cancel-btn">Delete Order</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Jean Charet</td>
+                <td>2021-1-27</td>
+                <td>#421484</td>
+                <td>
+                    <button type="button" class="edit-btn">Edit Order</button>
+                    <button type="button" class="cancel-btn">Delete Order</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Lou Albano</td>
+                <td>2021-1-16</td>
+                <td>#421485</td>
+                <td>
+                    <button type="button" class="edit-btn">Edit Order</button>
+                    <button type="button" class="cancel-btn">Delete Order</button>
+                </td>
+            </tr>
+        </table>
+        <button type="submit" class="save-btn">Save All</button>
+        </div>
+        <div class="footer">Copyright &copy Fast groceries &nbsp; Technical support: (514) 555-123</div>
+    </body>
+</html>

@@ -1,21 +1,33 @@
-*{
-    margin:0;
-    padding: 0;
-
+html{
+    background-color: #3c3c3c;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+    "Helvetica Neue",Arial,sans-serif,"Apple Color Emoji",
+    "Segoe UI Emoji","Segoe UI Symbol";
 }
-/*logout*/
-.username{
 
+/* Header Styling */
+.header{
+    color:#cccccc;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.header .left-screen{
+    font-size: 1.25rem;
+    float: left;
+ }
+
+.username{
     list-style: none;
+    margin-right: 50px;
 }
 .username li{
     display: inline-block;
     position: relative;
     line-height:16px;
-    text-align: right;
     float: right;
 }
-.username li a{
+.dropdown li a{
     display: block;
     padding: 8px 25px;
     color: #F0C38E;
@@ -25,78 +37,224 @@
     color: #F1AA9B;
 }
 .username li ul.dropdown{
-    min-width: 125px; /* Set width of the dropdown */
+    min-width: 125px;
     display: none;
     position: absolute;
-    z-index: 999;
-    left: 0;
+    right: -10px;
+   
 }
+
 .username li:hover ul.dropdown{
-    display: block; /* Display the dropdown */
+    display: block; 
 }
+
 .username li ul.dropdown li{
     display: block;
 }
-body{
-    background-color: #3c3c3c;
-}
-/*header*/
-.header{
-    background-color: #3c3c3c;
-    height: 20%;
-    color: #cccccc;
-    width: 100%;
-}
-.title{
-    padding: 8px 16px;
-}
-.user{
-    padding-top: 10px;
-    margin-right: 20px;
+
+
+ /* --End Header Styling */
+
+/* Site navigation menu */
+.site-nav{
+    float: left;
+ }
+
+.site-nav ul{
+   margin-top: 70px;
+   padding-left: 15px;
 }
 
-/*aside navbar*/
-.aside{
-    background-color: #3c3c3c;
-    height: 680px;
-    text-align: left;
-    float: left;
-    padding: 50px 30px;
-    font-size: large;
-    clear: both;
+.site-nav li{
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 115%;
+
 }
-.aside .nav-link{
-    color: #F0C38E;
-}
-.aside .nav-link:hover{
+
+.site-nav a:hover{
     color: #F1AA9B;
 }
-/*main information*/
-.main{
-    background-color: #e9ecef ;
-    height: auto;
-    float: left;
-    margin-top: 30px;
-}
-.breadcrumb{
-    margin-bottom: 0%;
-}
-/*responsive table*/
-@media
-only screen
-and (max-width: 760px), (min-device-width: 375px)
-and (max-device-width: 1024px)  {
 
-    /* Force table to not be like tables anymore */
-    table, thead, tbody, th, td, tr {
-        display: block;
+.site-nav a{
+    text-decoration: none;
+    color: #F0C38E;
+}
+
+i{
+    margin-right: 5px;
+}
+/* --End site navigation menu */
+
+/* Center Area Styling */
+.center-area{
+    position: relative;
+    background-color: #e9ecef;
+    margin-top: 40px;
+    width: 1210px;
+    height: 600px;
+    margin-left: 220px;
+    border: 3px solid black;
+    border-radius: 30px;
+    box-sizing: border-box;
+    
+}
+
+.add-btn{
+    height: 32px;
+    width: 90px;
+    color: #fff;
+    border-color: #23272b;
+    border: 1px solid transparent;
+    background-color:  #23272b;
+    padding: .25rem .5rem;
+    font-size: 13px;
+    text-align: center;
+    border-radius: .2rem;
+    margin-left: 60px;
+}
+
+table{
+    width: 90%;
+    border-collapse: collapse;
+    margin-left: 40px;
+    height: 400px;
+    margin-top: 0px;
+}
+
+table td,
+table th{
+    text-align: center;
+    border-top: 1px solid #dee2e6;
+    vertical-align: middle;
+    margin: 0;
+    padding: 15px;
+}
+
+table .cancel-btn,
+table .edit-btn{
+    height: 32px;
+    width: 100px;
+    color: #fff;
+    border: 1px solid transparent;
+    padding: .25rem .5rem;
+    font-size: 13px;
+    text-align: center;
+    border-radius: .2rem;
+}
+
+table .cancel-btn{
+    background-color: #23272b;
+}
+
+table .edit-btn{
+    background-color: #dc3545;
+}
+
+.save-btn{
+    height: 35px;
+    width: 100px;
+    color: #fff;
+    border-color: #dc3545;
+    border: 1px solid transparent;
+    background-color: #dc3545;
+    padding: .25rem .5rem;
+    margin-top: 50px;
+    margin-left: 1050px;
+    font-size: 13px;
+    text-align: center;
+    border-radius: .2rem;
+}
+
+
+/* Aside nav styling */
+
+.aside-nav{
+    padding: 0;
+    margin: 0;
+    height: 50px;
+}
+
+.aside-nav span{
+    color: rgb(134, 131, 131);
+}
+
+.aside-nav ul{
+    list-style: none;
+}
+
+.aside-nav li{
+    float: left;
+}
+
+.aside-nav a{
+    text-decoration: none;
+    padding-right: 5px;
+    box-sizing: border-box;
+    color: blue;
+    
+}
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+} 
+.group:after {
+  clear: both;
+}
+.group {
+  zoom: 1; 
+}
+
+.footer{
+    background-color:#3c3c3c;
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    clear: both;
+    text-align: center;
+    color: #cccccc;
+    padding-top: 10px;
+    font-size: small;
+    overflow: hidden;
+}
+
+@media
+only screen and (max-width: 760px), (min-device-width: 375px)
+and (max-device-width: 1024px){ 
+
+    .site-nav{
+        float: none;
+        font-size: 40px;
     }
 
-    /* Hide table headers (but not display: none;, for accessibility) */
-    thead tr {
+    .right-screen{
         position: absolute;
-        top: -9999px;
-        left: -9999px;
+        right: -650px;
+        top: 0;
+    }
+
+    .center-area{
+        margin: 0;
+        height: 1900px;
+    }
+
+    table th,
+    table td{
+        text-align: left;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+     }
+
+    /* Hide table headers */
+    thead tr {
+        display: none;
     }
 
     tr {
@@ -108,43 +266,32 @@ and (max-device-width: 1024px)  {
     }
 
     td {
-        /* Behave  like a "row" */
         border: none;
         border-bottom: 1px solid #eee;
         position: relative;
         padding-left: 50%;
+        font-size: 35px;
     }
 
-    /*Label the data*/
-    td:nth-of-type(1):before { content: "#: "; }
-    td:nth-of-type(2):before { content: "Username: "; }
-    td:nth-of-type(3):before { content: "Last name: "; }
-    td:nth-of-type(4):before { content: "First name: "; }
-    td:nth-of-type(5):before { content: "Email: "; }
-    td:nth-of-type(6):before { content: ""; }
-}
+    table .edit-btn,
+    table .cancel-btn{
+        width: 150px;
+        height: 50px;
+        font-size: 20px;
+    }
 
-/*confirm button*/
-.btn-adduser{
-   margin: 10px 20px 20px 20px;
-}
+    td:nth-of-type(1):before { content: "Ordered By: "; }
+    td:nth-of-type(2):before { content: "Ordered On: "; }
+    td:nth-of-type(3):before { content: "Order ID: "; }
+    td:nth-of-type(4):before { content: ""; }
 
-.confirm_button{
-    margin-bottom: 10%;
-}
-
-/*footer*/
-.footer{
-    background-color:#3c3c3c;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 40px;
-    clear: both;
-    text-align: center;
-    color: #cccccc;
-    padding-top: 10px;
-    font-size: small;
-    overflow: auto;
+    .save-btn{
+        position: absolute;
+        bottom: 80px;
+        right: 60px;
+        height: 60px;
+        width: 130px;
+        font-size: 27px;
+        margin: 0px;
+    }
 }
