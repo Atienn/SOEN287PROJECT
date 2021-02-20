@@ -1,9 +1,16 @@
 .stock{
     text-align: center;
 }
+
 .product_images{
     height: 100px;
 }
+
+.btn-adduser
+{
+    margin-right: 20px;
+}
+
 /*responsive table*/
 @media
 only screen
