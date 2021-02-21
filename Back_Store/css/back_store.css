@@ -219,7 +219,7 @@ table .edit-btn{
     color: #cccccc;
     padding-top: 10px;
     font-size: small;
-    overflow: hidden;
+    overflow: auto;
 }
 
 @media
@@ -279,7 +279,7 @@ and (max-device-width: 1024px){
         border-bottom: 1px solid #eee;
         position: relative;
         padding-left: 50%;
-        font-size: 35px;
+        font-size: 1rem;
     }
 
     table .edit-btn,
@@ -305,7 +305,7 @@ and (max-device-width: 1024px){
     }
 
     .group {
-        font-size:  2rem;
+        font-size:  1rem;
         margin-top: 20px;
     }
 }
