@@ -123,6 +123,7 @@ body {
 .subtitle {
   color: #c05555;
   width: 100%;
+  padding-left: 15px;
 }
 
 .input-group .button-minus {
