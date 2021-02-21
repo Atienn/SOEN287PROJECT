@@ -18,34 +18,37 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 
-<body>
-  <!--header-->
-  <div class="row">
-    <div class="header col-lg-10 d-none d-sm-block">
-      <img src="../img/tomato.png" class="img-fluid" alt="Responsive image" width="100px">
-      <span class="title navbar-brand">
-        <h1>Fast Groceries</h1>
-      </span>
-    </div>
-    <div class="logAccount col-lg-2">
-      <a class="login" href="#">Login</a>
-      <a class="register" href="#">Register</a>
-    </div>
+<!--header-->
+<div class="row">
+  <div class="header col-lg-10 d-none d-sm-block">
+    <img src="../img/tomato.png" class="img-fluid" alt="Responsive image" width="100px">
+    <span class="title navbar-brand">
+      <h1>Fast Groceries</h1>
+    </span>
   </div>
-  <!--navigation-->
-  <div class="main">
-    <div class="row">
-      <div class="col-lg-2">
-      </div>
-      <div class="col-lg-8">
+  <div class="logAccount col-lg-2">
+    <a class="login" href="../../Auth/LoginPage.html">Login</a>
+    <a class="register" href="../../Auth/SignUpPage.html">Register</a>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-2">
+
+  </div>
+  <div class="col-lg-8">
+    <!--body-->
+
+    <body>
+      <div class="navbarSticky">
         <nav class="navbar navbar-expand-lg bg-c05555">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span>Navigation</span>
           </button>
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active">
-                <a class="nav-link" href="#">&nbsp HOME &nbsp<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="../homePage.html">&nbsp HOME &nbsp<span class="sr-only">(current)</span></a>
               </li>
               <a class="nav-link" href="#">&nbsp ALL PRODUCTS &nbsp</a>
               <li class="nav-item dropdown">
@@ -54,18 +57,16 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="#">Dairy & Eggs</a>
-                  <a class="dropdown-item" href="#">Fruits & Vegetables</a>
-                  <a class="dropdown-item" href="#">Fish & Seafood</a>
-                  <a class="dropdown-item" href="#">Meat & Poultry</a>
+                  <a class="dropdown-item" href="../Fruits&Vegetables/fruits_vegetables.html">Fruits & Vegetables</a>
+                  <a class="dropdown-item" href="../seaFood/seafood.html">Fish & Seafood</a>
+                  <a class="dropdown-item" href="../Meat&Poultry/MeatAndPoultry.html">Meat & Poultry</a>
                   <a class="dropdown-item" href="#">Beverages</a>
-                  <a class="dropdown-item" href="#">Beer & Wine</a>
+                  <a class="dropdown-item" href="../Beer&Wine/beer_wine.html">Beer & Wine</a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="#">More...</a>
                 </div>
               </li>
-
-              <a class="nav-link" href="#">&nbsp CART &nbsp</a>
-
+              <a class="nav-link" href="../shopping_cart.html">&nbsp CART &nbsp</a>
 
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -74,50 +75,51 @@
             </form>
           </div>
         </nav>
-        <div class="row product">
-          <div class="col-sm align-self-start">
-            <img class="itemImg img-fluid animated fadeInUp" src="../img/Salmon.png" alt="" width="400">
-          </div>
-          <div class="col-sm align-self-start">
-            <h3>Salmon</h3>
-            <p>sold individually</p>
-            <p>$6.99/lb</p>
-            <h6>Quantity</h6>
-            <div>
-              <div class="def-number-input number-input mb-0 w-100">
-                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus">
-                  -
-                </button>
-                <input class="quantity" min="1" name="quantity" value="1" type="number" />
-                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">
-                  +
-                </button>
-              </div>
+      </div>
+      <div class="row product">
+        <div class="col-sm align-self-start">
+          <img class="itemImg img-fluid animated fadeInUp" src="../img/Salmon.png" alt="" width="400">
+        </div>
+        <div class="col-sm align-self-start">
+          <h3>Salmon</h3>
+          <p>sold individually</p>
+          <p>$6.99/lb</p>
+          <h6>Quantity</h6>
+          <div>
+            <div class="def-number-input number-input mb-0 w-100">
+              <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus">
+                -
+              </button>
+              <input class="quantity" min="1" name="quantity" value="1" type="number" />
+              <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">
+                +
+              </button>
             </div>
-            <button type="button" class="btn btn-danger" style="width:30%;">Add to Cart</button>
-            <br />
-            <div class="product_description">
-              <h3>Product description</h3>
-              <p>Fresh Canadian Atlantic Salmon Fillet </p>
-              <p>
-                <a class="btn btn-dark" data-toggle="collapse" href="#moreDescription" role="button" aria-expanded="false" aria-controls="collapseExample">
-                  More description
-                </a>
-              </p>
-              <div class="collapse" id="moreDescription">
-                <div class="card card-body">
-                  Product Number: 230120
-                </div>
+          </div>
+          <button type="button" class="btn btn-danger" style="width:30%;">Add to Cart</button>
+          <br />
+          <div class="product_description">
+            <h3>Product description</h3>
+            <p>Fresh Canadian Atlantic Salmon Fillet </p>
+            <p>
+              <a class="btn btn-dark" data-toggle="collapse" href="#moreDescription" role="button" aria-expanded="false" aria-controls="collapseExample">
+                More description
+              </a>
+            </p>
+            <div class="collapse" id="moreDescription">
+              <div class="card card-body">
+                Product Number: 230120
               </div>
             </div>
           </div>
         </div>
+      </div>
 
-      </div>
-      <div class="col-lg-2">
-      </div>
-    </div>
   </div>
+  <div class="col-lg-2">
+  </div>
+</div>
+</div>
 </body>
 <!--footer-->
 <div class="footer d-none d-sm-block">
