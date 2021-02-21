@@ -200,6 +200,7 @@ body {
   width: 100%;
   border: 1px black;
   padding: 10px;
+  display: block;
 }
 
 /*
