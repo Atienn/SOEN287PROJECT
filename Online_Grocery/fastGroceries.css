@@ -1,9 +1,3 @@
-html,
-body {
-  height: 100%;
-  overflow-x: hidden;
-}
-
 body {
   background-color: white;
   display: flex;
@@ -14,7 +8,7 @@ body {
 /*header*/
 .header {
   background-color: #ffc85c;
-  height: 150px;
+  height: 125px;
   color: #c05555;
   font-style: italic;
   text-align: center;
@@ -27,8 +21,6 @@ body {
   font-size: 20px;
   font-style: italic;
   color: #59886b;
-  top: 1;
-  right: 5px;
   width: 10%;
   margin-right: 70px;
 }
@@ -37,8 +29,6 @@ body {
   font-size: 20px;
   font-style: italic;
   color: #59886b;
-  top: 1;
-  right: 5px;
   width: 10%;
 }
 
@@ -46,29 +36,27 @@ body {
   background-color: #fff8c1;
   text-align: center;
   width: 100%;
-  padding: 20px 10px;
 }
 
 /*navbar div*/
 .navbar {
-  background-color: #c05555;
-  height: 100px;
-  color: #c05555;
-  text-align: center;
+  position: sticky;
+  top: 0;
   width: 100%;
-  position: relative;
-  z-index: 999;
+
+  height: 50px;
+
+  background-color: #c05555;
+  color: #c05555;
+  
+  text-align: center;
+  z-index: 10;
 }
 
 .btn {
   color: #fff8c1;
 }
 
-.navbarSticky {
-  z-index: 999;
-  position: sticky;
-  top: 0;
-}
 
 .navbar-nav {
   text-align: center;
@@ -123,7 +111,8 @@ body {
 .subtitle {
   color: #c05555;
   width: 100%;
-  padding-left: 15px;
+  margin-top: 10px;
+  margin-left: 20px;
 }
 
 .input-group .button-minus {
@@ -179,10 +168,6 @@ body {
   font-style: italic;
 }
 
-#main {
-  flex: 1;
-}
-
 /*item list*/
 .item {
   font-size: 16px;
@@ -201,7 +186,6 @@ body {
   width: 100%;
   border: 1px black;
   padding: 10px;
-  display: block;
 }
 
 /*
@@ -214,7 +198,7 @@ Add to cart button class.
 .btn.btn-danger {
   position: relative;
   width: 100%;
-  z-index: -1;
+  z-index: 1;
 }
 
 section {
