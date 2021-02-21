@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lobster</title>
+  <title>SeaFood</title>
   <!--  CSS Stylesheets-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="../fastGroceries.css">
@@ -76,45 +76,61 @@
           </div>
         </nav>
       </div>
-      <div class="row product">
-        <div class="col-sm align-self-start">
-          <img class="itemImg img-fluid animated fadeInUp" src="../img/Lobster.png" alt="" width="400">
+      <!--show product category name-->
+      <section class="content">
+        <div class="row">
+          <span class="subtitle">
+            <h2>Fish & Seafood</h2>
+          </span>
         </div>
-        <div class="col-sm align-self-start">
-          <h3>Lobster</h3>
-          <p>sold individually</p>
-          <p>$20.99/un</p>
-          <h6>Quantity</h6>
-          <div>
-            <div class="def-number-input number-input mb-0 w-100">
-              <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="minus">
-                -
-              </button>
-              <input class="quantity" min="1" name="quantity" value="1" type="number" />
-              <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">
-                +
-              </button>
-            </div>
+        <!--Items list -->
+        <div class="row">
+          <div class="col-sm align-self-start">
+            <a class="toDescription" href="lobster.html">
+              <img class="itemImg img-fluid animated fadeInUp" src="../img/lobster.png" alt="">
+            </a>
+            <p class="item">Lobster $20.99</p>
+            <button type="button" class="btn btn-danger">Add to Cart</button>
           </div>
-          <button type="button" class="btn btn-danger" style="width:30%;">Add to Cart</button>
-          <br />
-          <div class="product_description">
-            <h3>Product description</h3>
-            <p>Lobster cooked in store</p>
-            <p>
-              <a class="btn btn-dark" data-toggle="collapse" href="#moreDescription" role="button" aria-expanded="false" aria-controls="collapseExample">
-                More description
-              </a>
-            </p>
-            <div class="collapse" id="moreDescription">
-              <div class="card card-body">
-                Product Number: 214378
-              </div>
-            </div>
+          <div class="col-sm align-self-center">
+            <a href="shrimp.html">
+              <img class="itemImg img-fluid animated fadeInUp" src="../img/shrimp.png" alt="" href="#">
+            </a>
+            <p class="item">Shrimp $4.99</p>
+            <button type="button" class="btn btn-danger">Add to Cart</button>
+          </div>
+          <div class="col-sm align-self-end">
+            <a href="salmon.html">
+              <img class="itemImg img-fluid animated fadeInUp" src="../img/salmon.png" alt="" href="#">
+            </a>
+            <p class="item">Salmon $6.99</p>
+            <button type="button" class="btn btn-danger">Add to Cart</button>
           </div>
         </div>
-      </div>
-
+        <!--second row-->
+        <div class="row">
+          <div class="col-sm align-self-start">
+            <a href="oyster.html">
+              <img class="itemImg img-fluid animated fadeInUp" src="../img/oyster.png" alt="" href="#">
+            </a>
+            <p class="item">Oyster $11.99</p>
+            <button type="button" class="btn btn-danger">Add to Cart</button>
+          </div>
+          <div class="col-sm align-self-start">
+            <a href="crab.html">
+              <img class="itemImg img-fluid animated fadeInUp" src="../img/crab.png" alt="" href="#">
+            </a>
+            <p class="item">Crab $17.99</p>
+            <button type="button" class="btn btn-danger">Add to Cart</button>
+          </div>
+          <div class="col-sm align-self-start">
+            <a href="ve_broccoli.html">
+              <img class="itemImg img-fluid animated fadeInUp" src="img/.png" alt="" href="#">
+            </a>
+            <p class="item"></p>
+          </div>
+        </div>
+      </section>
   </div>
   <div class="col-lg-2">
   </div>
