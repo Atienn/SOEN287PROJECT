@@ -2,9 +2,10 @@
 *{
     margin:0;
     padding: 0;
+
 }
 body{
-overflow-x:hidden;
+    overflow-x: hidden;
 }
 logout
 .username{
@@ -67,7 +68,7 @@ body{
     padding: 50px 30px;
     font-size: large;
     clear: both;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 20px;
 }
 .aside .nav-link{
@@ -79,7 +80,7 @@ body{
 /*main information*/
 .main{
     background-color: #e9ecef ;
-    height: auto;
+    height:auto;
     margin-top: 30px;
     border-radius: 20px;
 }
@@ -109,7 +110,9 @@ h4 {
     font-family: Montserrat;
     font-weight: bold;
 }
-
+#shippingaddress{
+    width: 300px;
+}
 label{
     margin: 10px;
     font-weight: bolder;
