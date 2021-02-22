@@ -255,7 +255,7 @@ select{
     border-radius: .25rem;
 }
 
-.apply-btn{
+.save-btn{
     margin-top: 20px;
     width: 120px;
     height: 40px;
@@ -331,7 +331,7 @@ and (max-device-width: 1024px){
         margin-left: 50px;
     }
 
-    .apply-btn{
+    .save-btn{
         margin-top: 60px;
     }
 } 
