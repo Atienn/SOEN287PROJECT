@@ -53,6 +53,11 @@ body {
   z-index: 10;
 }
 
+.navbarSticky {
+  position: sticky;
+  top: 0;
+}
+
 .btn {
   color: #fff8c1;
 }
@@ -208,6 +213,7 @@ body {
   width: 100%;
   border: 1px black;
   padding: 10px;
+  display: block;
 }
 
 /*
@@ -236,7 +242,8 @@ section {
 
 .footer {
   margin-top: 50px;
-  height: 80px;
+  padding-bottom: 10px;
+  height: auto;
   background-color: #59886b;
   bottom: 0;
   left: 0;
