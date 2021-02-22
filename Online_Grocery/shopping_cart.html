@@ -17,55 +17,60 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<!--header-->
-<div class="row">
-    <div class="header">
-        <img src="img/tomato.png" class="img-fluid" alt="Responsive image" width="100px">
-        <span class="title navbar-brand"><h1>Fast Groceries</h1></span>
-        <a class="login" href="/SOEN287PROJECT/Auth/LoginPage.html">Login</a>
-        <a class="Register" href="/SOEN287PROJECT/Auth/SignUpPage.html">&nbsp Register</a>
+<body>
+  <!--header-->
+  <div class="row">
+    <div class="header col-lg-10 d-none d-sm-block">
+      <img src="../Online_Grocery/img/tomato.png" class="img-fluid" alt="Responsive image" width="100px">
+      <span class="title navbar-brand">
+        <h1>Fast Groceries</h1>
+      </span>
     </div>
-</div>
-  <!--body-->
-  <body>
-    <div class="">
-
-    <nav class="navbar navbar-expand-lg bg-c05555">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span>Navigation</span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="homePage.html">&nbsp HOME &nbsp<span class="sr-only">(current)</span></a>
-      </li>
-      <a class="nav-link" href="#">&nbsp ALL PRODUCTS &nbsp</a>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          AISLES
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="../Online_Grocery/dairy_eggs/dairy_eggs.html">Dairy & Eggs</a>
-          <a class="dropdown-item" href="../Online_Grocery/Fruits&Vegetables/fruits_vegetables.html">Fruits & Vegetables</a>
-          <a class="dropdown-item" href="../Online_Grocery/seaFood/seafood.html">Fish & Seafood</a>
-          <a class="dropdown-item" href="../Online_Grocery/Meat&Poultry/MeatAndPoultry.html">Meat & Poultry</a>
-          <a class="dropdown-item" href="../Online_Grocery/Beverages/">Beverages</a>
-          <a class="dropdown-item" href="../Online_Grocery/Beer&Wine/beer_wine.html">Beer & Wine</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">More...</a>
-        </div>
-      </li>
-      <a class="nav-link" href="shopping_cart.html">&nbsp CART &nbsp</a>
-
-    </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button type="button" class="btn btn-warning">Search</button>
-      </form>
+    <div class="logAccount col-lg-2">
+      <a class="login" href="../Auth/LoginPage.html">Login</a>
+      <a class="register" href="../Auth/SignUpPage.html">Register</a>
     </div>
-    </nav>
   </div>
+  
+      <!--body-->
+        <div class="navbarSticky">
+          <nav class="navbar navbar-expand-lg bg-c05555">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span>Navigation</span>
+            </button>
+  
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="homePage.html">&nbsp HOME &nbsp<span class="sr-only">(current)</span></a>
+                </li>
+                <a class="nav-link" href="#">&nbsp ALL PRODUCTS &nbsp</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    AISLES
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="../Online_Grocery/dairy_eggs/dairy_eggs.html">Dairy & Eggs</a>
+                    <a class="dropdown-item" href="../Online_Grocery/Fruits&Vegetables/fruits_vegetables.html">Fruits & Vegetables</a>
+                    <a class="dropdown-item" href="../Online_Grocery/seaFood/seafood.html">Fish & Seafood</a>
+                    <a class="dropdown-item" href="../Online_Grocery/Meat&Poultry/MeatAndPoultry.html">Meat & Poultry</a>
+                    <a class="dropdown-item" href="../Online_Grocery/Beverages/">Beverages</a>
+                    <a class="dropdown-item" href="../Online_Grocery/Beer&Wine/beer_wine.html">Beer & Wine</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">More...</a>
+                  </div>
+                </li>
+                <a class="nav-link" href="../Online_Grocery/shopping_cart.html">&nbsp CART &nbsp</a>
+  
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button type="button" class="btn btn-warning">Search</button>
+              </form>
+            </div>
+          </nav>
+        </div>
+        <!--NavBarEND-->
 
 
   <div class="row justify-content-center">
