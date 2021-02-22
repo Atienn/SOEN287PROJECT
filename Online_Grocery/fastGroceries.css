@@ -108,6 +108,28 @@ body {
 }
 
 /*body*/
+
+#customerLogin {
+  margin-top: 2%;
+  color: #59886b;
+  font-size: 60px;
+  font-family: Georgia;
+  text-align: center;
+}
+
+.signInColumn {
+  width: 150px;
+  color: #32754c;
+  font-size: 30px;
+  margin-bottom: 2%;
+}
+
+.email {
+  margin-top: 2%;
+  color: #5e9071;
+  font-size: 20px;
+}
+
 .subtitle {
   color: #c05555;
   width: 100%;

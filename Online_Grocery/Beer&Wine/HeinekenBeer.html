@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Heineken Beer</title>
+    <title>Budlight Beer</title>
     <!--  CSS Stylesheets-->
     <link
       rel="stylesheet"
@@ -11,7 +11,6 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-
     <link rel="stylesheet" href="../fastGroceries.css" />
 
     <!--  Font Awesome-->
@@ -37,21 +36,30 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
-    <!--header-->
-    <div class="row">
-      <div class="header">
-        <img
-          src="../img/tomato.png"
-          class="img-fluid"
-          alt="Responsive image"
-          width="80px"
-        />
-        <span class="title navbar-brand"><h1>Fast Groceries</h1></span>
-        <a class="login" href="LoginPage.html">Login</a>
-        <a class="Register" href="SignUpPage.html">&nbsp Register</a>
-      </div>
+
+  <!--header-->
+  <div class="row">
+    <div class="header col-lg-10 d-none d-sm-block">
+      <img
+        src="../img/tomato.png"
+        class="img-fluid"
+        alt="Responsive image"
+        width="100px"
+      />
+      <span class="title navbar-brand">
+        <h1>Fast Groceries</h1>
+      </span>
     </div>
+    <div class="logAccount col-lg-2">
+      <a class="login" href="#">Login</a>
+      <a class="register" href="#">Register</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-2"></div>
+  </div>
+
+  <body>
     <!--navigation-->
     <div class="main">
       <div class="row">
@@ -138,7 +146,7 @@
                   </button>
                   <input
                     class="quantity"
-                    min="0"
+                    min="1"
                     name="quantity"
                     value="1"
                     type="number"

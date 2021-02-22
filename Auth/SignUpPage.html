@@ -1,121 +1,84 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign in page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>users list page</title>
   </head>
-  <!--  CSS Stylesheets-->
-  <link
-    rel="stylesheet"
-    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous"
-  />
-  <link rel="stylesheet" href="SignIn.css" />
-  <!--  Font Awesome-->
-  <script
-    src="https://kit.fontawesome.com/5e7c980afc.js"
-    crossorigin="anonymous"
-  ></script>
+    <!--  CSS Stylesheets-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="/SOEN287PROJECT/Online_Grocery/fastGroceries.css">
 
-  <!--  Bootstrap Scripts-->
-  <script
-    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"
-  ></script>
+<!--  Font Awesome-->
+<script src="https://kit.fontawesome.com/5e7c980afc.js" crossorigin="anonymous"></script>
 
-  <!--header-->
-  <div class="row">
-    <div class="header">
-      <img
-        src="img/tomato.png"
-        class="img-fluid"
-        alt="Responsive image"
-        width="100px"
-      />
-      <span class="title navbar-brand"><h1>Fast Groceries</h1></span>
-      <a class="login" href="LoginPage.html">Login</a>
-      <a class="Register" href="SignUpPage.html">&nbsp Register</a>
-    </div>
+<!--  Bootstrap Scripts-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!--header-->
+<div class="row">
+  <div class="header col-lg-10 d-none d-sm-block">
+    <img src="/SOEN287PROJECT/Online_Grocery/img/tomato.png" class="img-fluid" alt="Responsive image" width="100px">
+    <span class="title navbar-brand">
+      <h1>Fast Groceries</h1>
+    </span>
   </div>
-  <div class="row">
-    <div class="col-lg-2"></div>
-    <div class="col-lg-8">
-      <!--body-->
-      <body>
-        <div class="">
-          <nav class="navbar navbar-expand-lg bg-c05555">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span>Navigation</span>
-            </button>
+  <div class="logAccount col-lg-2">
+    <a class="login" href="LoginPage.html">Login</a>
+    <a class="register" href="SignUpPage.html">Register</a>
+  </div>
+</div>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#"
-                    >&nbsp HOME &nbsp<span class="sr-only">(current)</span></a
-                  >
-                </li>
-                <a class="nav-link" href="#">&nbsp ALL PRODUCTS &nbsp</a>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    AISLES
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Dairy & Eggs</a>
-                    <a class="dropdown-item" href="#">Fruits & Vegetables</a>
-                    <a class="dropdown-item" href="#">Fish & Seafood</a>
-                    <a class="dropdown-item" href="#">Beverages</a>
-                    <a class="dropdown-item" href="#">Beer & Wine</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">More...</a>
-                  </div>
-                </li>
-                <a class="nav-link" href="#">&nbsp CART &nbsp</a>
-              </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input
-                  class="form-control mr-sm-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button type="button" class="btn btn-warning">Search</button>
-              </form>
+<div class="row">
+  <div class="col-lg-2">
+</div>
+
+<body>
+<div class="col-lg-8">
+  <!--navigation-->
+  <div class="navbarSticky">
+    <nav class="navbar navbar-expand-lg bg-c05555">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span>Navigation</span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">&nbsp HOME &nbsp<span class="sr-only">(current)</span></a>
+          </li>
+          <a class="nav-link" href="#">&nbsp ALL PRODUCTS &nbsp</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              AISLES
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Dairy & Eggs</a>
+              <a class="dropdown-item" href="#">Fruits & Vegetables</a>
+              <a class="dropdown-item" href="#">Fish & Seafood</a>
+              <a class="dropdown-item" href="#">Meat & Poultry</a>
+              <a class="dropdown-item" href="#">Beverages</a>
+              <a class="dropdown-item" href="#">Beer & Wine</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">More...</a>
             </div>
-          </nav>
+          </li>
+    
+          <a class="nav-link" href="#">&nbsp CART &nbsp</a>
+    
+    
+        </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button type="button" class="btn btn-warning">Search</button>
+          </form>
         </div>
-        <!--You can put your part here-->
+        </nav>
+  </div>
 
-        <h2 id="customerLogin">Create an account</h2>
+  <h2 id="customerLogin">Create an account</h2>
 
         <p class="signInColumn">Sign Up</p>
 
@@ -170,28 +133,25 @@
           </button>
         </form>
 
-        <!--footer-->
-        <div class="footer">
-          <center>
-            <div class="row">
-              <div class="col-sm">
-                <a class="footerText" href="#">ABOUT</a>
-              </div>
-              <div class="col-sm">
-                <a class="footerText" href="#">CONTACT US</a>
-              </div>
-            </div>
-          </center>
-          <div class="copyright">
-            <p>
-              Copyright &copy Fast groceries &nbsp; Technical support: 514 555
-              1234
-            </p>
-          </div>
-        </div>
-      </body>
-    </div>
+        <div class="col-lg-2"></div>
 
-    <div class="col-lg-2"></div>
+</div>
+
+
+
+<!-- Footer -->
+<div class="footer" style="position: absolute;">
+  <div class="row">
+      <div class="col-sm">
+          <a class="footerText "href="#">ABOUT</a>
+      </div>
+      <div class="col-sm">
+          <a class="footerText "href="#">CONTACT US</a>
+      </div>
+      <div class="col-sm">
+          <p>Copyright &copy Fast groceries &nbsp; Technical support: 514 555 1234 </p>
+      </div>
   </div>
+</div>
+</body>
 </html>
