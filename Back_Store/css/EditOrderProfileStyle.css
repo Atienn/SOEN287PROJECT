@@ -1,0 +1,305 @@
+html{
+    background-color: #3c3c3c;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
+    "Helvetica Neue",Arial,sans-serif,"Apple Color Emoji",
+    "Segoe UI Emoji","Segoe UI Symbol";
+}
+
+/* Header Styling */
+.header{
+    color:#cccccc;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.header .left-screen{
+    font-size: 1.25rem;
+    float: left;
+ }
+
+.username{
+    list-style: none;
+    margin-right: 50px;
+}
+.username li{
+    display: inline-block;
+    position: relative;
+    line-height:16px;
+    float: right;
+}
+.dropdown li a{
+    display: block;
+    padding: 8px 25px;
+    color: #F0C38E;
+    text-decoration: none;
+}
+.username li a:hover{
+    color: #F1AA9B;
+}
+.username li ul.dropdown{
+    min-width: 125px;
+    display: none;
+    position: absolute;
+    right: -10px;
+   
+}
+
+.username li:hover ul.dropdown{
+    display: block; 
+}
+
+.username li ul.dropdown li{
+    display: block;
+}
+
+
+ /* --End Header Styling */
+
+/* Site navigation menu */
+.site-nav{
+    float: left;
+ }
+
+.site-nav ul{
+   margin-top: 70px;
+   padding-left: 15px;
+}
+
+.site-nav li{
+    list-style: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 115%;
+
+}
+
+.site-nav a:hover{
+    color: #F1AA9B;
+}
+
+.site-nav a{
+    text-decoration: none;
+    color: #F0C38E;
+}
+
+i{
+    margin-right: 5px;
+}
+/* --End site navigation menu */
+
+/* Center Area Styling */
+.center-area{
+    position: relative;
+    background-color: #e9ecef;
+    margin-top: 40px;
+    width: 1210px;
+    height: 651px;
+    margin-left: 220px;
+    border: 3px solid black;
+    border-radius: 30px;
+    box-sizing: border-box;
+    
+}
+
+.add-btn{
+    height: 32px;
+    width: 90px;
+    color: #fff;
+    border-color: #23272b;
+    border: 1px solid transparent;
+    background-color:  #23272b;
+    padding: .25rem .5rem;
+    font-size: 13px;
+    text-align: center;
+    border-radius: .2rem;
+    margin-left: 60px;
+}
+
+table{
+    width: 90%;
+    border-collapse: collapse;
+    margin-left: 40px;
+    height: 400px;
+    margin-top: 20px;
+}
+
+table td,
+table th{
+    text-align: center;
+    border-top: 1px solid #dee2e6;
+    vertical-align: middle;
+    margin: 0;
+    padding: 15px;
+}
+
+table .cancel-btn,
+table .edit-btn{
+    height: 32px;
+    width: 100px;
+    color: #fff;
+    border-color: #dc3545;
+    border: 1px solid transparent;
+    background-color: #dc3545;
+    padding: .25rem .5rem;
+    font-size: 13px;
+    text-align: center;
+    border-radius: .2rem;
+}
+
+table .edit-btn{
+    background-color: #23272b;
+    
+}
+
+.save-btn{
+    height: 35px;
+    width: 100px;
+    color: #fff;
+    border-color: #dc3545;
+    border: 1px solid transparent;
+    background-color: #dc3545;
+    padding: .25rem .5rem;
+    margin-top: 50px;
+    margin-left: 1050px;
+    font-size: 13px;
+    text-align: center;
+    border-radius: .2rem;
+}
+
+
+/* Aside nav styling */
+
+.aside-nav{
+    padding: 0;
+    margin: 0;
+    height: 50px;
+}
+
+.aside-nav span{
+    color: rgb(134, 131, 131);
+}
+
+.aside-nav ul{
+    list-style: none;
+}
+
+.aside-nav li{
+    float: left;
+}
+
+.aside-nav a{
+    text-decoration: none;
+    padding-right: 5px;
+    box-sizing: border-box;
+    color: blue;
+    
+}
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+} 
+.group:after {
+  clear: both;
+}
+.group {
+  zoom: 1; 
+}
+
+.footer{
+    background-color:#3c3c3c;
+    position: static;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    clear: both;
+    text-align: center;
+    color: #cccccc;
+    padding-top: 10px;
+    font-size: small;
+    overflow: auto;
+}
+
+@media
+only screen and (max-width: 800px), (min-width: 375px)
+and (max-width: 1024px){ 
+
+    .header .left-screen{
+        font-size: 20px ;
+    }
+
+    .site-nav{
+        float: none;
+        font-size: 20px;
+    }
+
+    .right-screen{
+        position: absolute;
+        right: -100px;
+        top: 7px;
+    }
+
+    .center-area{
+        margin: 0;
+        width: 120%;
+        height: 1400px;
+    }
+
+    table th,
+    table td{
+        text-align: left;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+        margin-left: 10px;
+     }
+
+    /* Hide table headers */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        margin: 0 0 1rem 0;
+    }
+
+    tr:nth-child(odd) {
+        background: #ccc;
+    }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: static;
+        margin: 0;
+        font-size: 15px;
+    }
+
+    table .edit-btn,
+    table .cancel-btn{
+        width: 120px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    td:nth-of-type(1):before { content: "Product: "; }
+    td:nth-of-type(2):before { content: "Quantity: "; }
+    td:nth-of-type(3):before { content: "Delivery Date: "; }
+    td:nth-of-type(4):before { content: ""; }
+
+    .save-btn{
+        position: absolute;
+        bottom: 20px;
+        right: 270px;
+        height: 50px;
+        width: 120px;
+        font-size: 27px;
+    }
+
+    
+}
