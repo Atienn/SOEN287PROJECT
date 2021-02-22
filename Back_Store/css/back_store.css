@@ -155,16 +155,21 @@ table .edit-btn{
 .save-btn{
     height: 35px;
     width: 100px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 1050px;
+    padding: .25rem .5rem;
+
     color: #fff;
     border-color: #dc3545;
-    border: 1px solid transparent;
     background-color: #dc3545;
-    padding: .25rem .5rem;
-    margin-top: 50px;
-    margin-left: 1050px;
+
+    border-radius: .2rem;
+    border: 1px solid transparent;
+
     font-size: 13px;
     text-align: center;
-    border-radius: .2rem;
 }
 
 
@@ -243,7 +248,7 @@ and (max-device-width: 1024px){
 
     .center-area{
         margin: 0;
-        height: 270vh;
+        height: 1525px;
         width: 100%;
     }
 
@@ -297,9 +302,10 @@ and (max-device-width: 1024px){
     .save-btn{
         position: absolute;
         bottom: 40px;
-        left: 40px;
-        height: 8%;
-        width: 13%;
+        right: 40px;
+        padding: 15px;
+        width: auto;
+        height: auto;
         font-size: 1.5rem;
         margin: 0px;
     }
