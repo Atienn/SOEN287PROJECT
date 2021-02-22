@@ -93,7 +93,7 @@ i{
     background-color: #e9ecef;
     margin-top: 40px;
     width: 1210px;
-    height: 600px;
+    height:auto;
     margin-left: 220px;
     border: 3px solid black;
     border-radius: 30px;
@@ -210,7 +210,6 @@ table .edit-btn{
 
 .footer{
     background-color:#3c3c3c;
-    position: static;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -220,16 +219,16 @@ table .edit-btn{
     color: #cccccc;
     padding-top: 10px;
     font-size: small;
-    overflow: hidden;
+    overflow: auto;
 }
 
 @media
 only screen and (max-width: 760px), (min-device-width: 375px)
 and (max-device-width: 1024px){ 
 
-    body{
+     body{
         overflow-x: hidden;
-    }
+    } 
 
     .site-nav{
         float: none;
@@ -244,7 +243,7 @@ and (max-device-width: 1024px){
 
     .center-area{
         margin: 0;
-        height: 1900px;
+        height: 270vh;
         width: 100%;
     }
 
@@ -280,7 +279,7 @@ and (max-device-width: 1024px){
         border-bottom: 1px solid #eee;
         position: relative;
         padding-left: 50%;
-        font-size: 35px;
+        font-size: 1rem;
     }
 
     table .edit-btn,
@@ -299,14 +298,14 @@ and (max-device-width: 1024px){
         position: absolute;
         bottom: 40px;
         left: 40px;
-        height: 60px;
-        width: 130px;
-        font-size: 27px;
+        height: 8%;
+        width: 13%;
+        font-size: 1.5rem;
         margin: 0px;
     }
 
     .group {
-        font-size:  2rem;
+        font-size:  1rem;
         margin-top: 20px;
     }
 }

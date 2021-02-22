@@ -61,7 +61,7 @@ body{
 /*aside navbar*/
 .aside{
     background-color: #3c3c3c;
-    height: 680px;
+    height: auto;
     text-align: left;
     float: left;
     padding: 50px 30px;
