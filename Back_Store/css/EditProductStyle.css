@@ -301,6 +301,12 @@ and (max-device-width: 1024px){
         width: 130%;
         height: 1200px;
     }
+    
+    .right-screen{
+        position: absolute;
+        right: -90px;
+        top: 7px;
+    }
 
     .product-image{
         float: none;
