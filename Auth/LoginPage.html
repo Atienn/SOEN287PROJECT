@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>users list page</title>
-  </head>
+
     <!--  CSS Stylesheets-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="../Online_Grocery/fastGroceries.css">
@@ -16,6 +16,10 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
 
 <!--header-->
 <div class="row">
@@ -31,12 +35,7 @@
   </div>
 </div>
 
-<div class="row">
-  <div class="col-lg-2">
-</div>
 
-<body>
-<div class="col-lg-8">
   <!--navigation-->
   <div class="navbarSticky">
     <nav class="navbar navbar-expand-lg bg-c05555">
@@ -47,7 +46,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">&nbsp HOME &nbsp<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="../Online_Grocery/homePage.html">&nbsp HOME &nbsp<span class="sr-only">(current)</span></a>
           </li>
           <a class="nav-link" href="#">&nbsp ALL PRODUCTS &nbsp</a>
           <li class="nav-item dropdown">
@@ -55,18 +54,18 @@
               AISLES
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Dairy & Eggs</a>
-              <a class="dropdown-item" href="#">Fruits & Vegetables</a>
-              <a class="dropdown-item" href="#">Fish & Seafood</a>
-              <a class="dropdown-item" href="#">Meat & Poultry</a>
-              <a class="dropdown-item" href="#">Beverages</a>
-              <a class="dropdown-item" href="#">Beer & Wine</a>
+              <a class="dropdown-item" href="../Online_Grocery/dairy_eggs/dairy_eggs.html">Dairy & Eggs</a>
+              <a class="dropdown-item" href="../Online_Grocery/Fruits&Vegetables/fruits_vegetables.html">Fruits & Vegetables</a>
+              <a class="dropdown-item" href="../Online_Grocery/seaFood/seafood.html">Fish & Seafood</a>
+              <a class="dropdown-item" href="../Online_Grocery/Meat&Poultry/MeatAndPoultry.html">Meat & Poultry</a>
+              <a class="dropdown-item" href="../Online_Grocery/Beverages/">Beverages</a>
+              <a class="dropdown-item" href="../Online_Grocery/Beer&Wine/beer_wine.html">Beer & Wine</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">More...</a>
             </div>
           </li>
     
-          <a class="nav-link" href="#">&nbsp CART &nbsp</a>
+          <a class="nav-link" href="../Online_Grocery/shopping_cart.html">&nbsp CART &nbsp</a>
     
     
         </ul>
@@ -77,6 +76,10 @@
         </div>
         </nav>
   </div>
+
+
+  <div class="row justify-content-center">
+  <div class="col-lg-8">
 
   <h2 id="customerLogin">Customer Login</h2>
 
@@ -126,25 +129,25 @@
 
         </form>
 
-        <div class="col-lg-2"></div>
-
-</div>
-
-
-
-<!-- Footer -->
-<div class="footer" style="position: absolute;">
-  <div class="row">
-      <div class="col-sm">
-          <a class="footerText "href="#">ABOUT</a>
-      </div>
-      <div class="col-sm">
-          <a class="footerText "href="#">CONTACT US</a>
-      </div>
-      <div class="col-sm">
-          <p>Copyright &copy Fast groceries &nbsp; Technical support: 514 555 1234 </p>
-      </div>
   </div>
-</div>
+  </div>
+
+
+
+
+  <!-- Footer -->
+  <div class="footer" style="position: absolute; margin-bottom: 0px;">
+    <div class="row">
+      <div class="col-sm">
+        <a class="footerText " href="#">ABOUT</a>
+      </div>
+      <div class="col-sm">
+        <a class="footerText " href="#">CONTACT US</a>
+      </div>
+      <div class="col-sm">
+        Copyright &copy Fast groceries. &nbsp; Technical support: (514) 555-1234.
+      </div>
+    </div>
+  </div>
 </body>
 </html>
