@@ -92,13 +92,11 @@ i{
     position: relative;
     background-color: #e9ecef;
     margin-top: 40px;
-    width: 1210px;
-    height:auto;
     margin-left: 220px;
     border: 3px solid black;
     border-radius: 30px;
     box-sizing: border-box;
-    
+    overflow: auto;
 }
 
 .add-btn{
@@ -153,12 +151,14 @@ table .edit-btn{
 }
 
 .save-btn{
-    height: 35px;
+    height: 40px;
     width: 100px;
+
+    float: right;
 
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 1050px;
+    margin-right: 40px;
     padding: .25rem .5rem;
 
     color: #fff;
@@ -168,7 +168,7 @@ table .edit-btn{
     border-radius: .2rem;
     border: 1px solid transparent;
 
-    font-size: 13px;
+    font-size: 16px;
     text-align: center;
 }
 
