@@ -41,81 +41,99 @@
   <body>
     <!--header-->
     <div class="row">
-      <div class="header">
+      <div class="header col-lg-10 d-none d-sm-block">
         <img
           src="../img/tomato.png"
           class="img-fluid"
           alt="Responsive image"
-          width="80px"
+          width="100px"
         />
-        <span class="title navbar-brand"><h1>Fast Groceries</h1></span>
-        <a class="login" href="/SOEN287PROJECT/Auth/LoginPage.html">Login</a>
-        <a class="Register" href="/SOEN287PROJECT/Auth/SignUpPage.html"
-          >&nbsp Register</a
-        >
+        <span class="title navbar-brand">
+          <h1>Fast Groceries</h1>
+        </span>
+      </div>
+      <div class="logAccount col-lg-2">
+        <a class="login" href="../../Auth/LoginPage.html">Login</a>
+        <a class="register" href="../../Auth/SignUpPage.html">Register</a>
       </div>
     </div>
     <!--navigation-->
-          <nav class="navbar navbar-expand-lg bg-c05555">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
+    <nav class="navbar navbar-expand-lg bg-c05555">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span>Navigation</span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >&nbsp HOME &nbsp<span class="sr-only">(current)</span></a
             >
-              <span>Navigation</span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#"
-                    >&nbsp HOME &nbsp<span class="sr-only">(current)</span></a
-                  >
-                </li>
-                <a class="nav-link" href="../homePage.html">&nbsp ALL PRODUCTS &nbsp</a>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    AISLES
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="../dairy_eggs/dairy_eggs.html">Dairy & Eggs</a>
-                    <a class="dropdown-item" href="../Fruits&Vegetables/fruits_vegetables.html">Fruits & Vegetables</a>
-                    <a class="dropdown-item" href="../seaFood/seafood.html">Fish & Seafood</a>
-                    <a class="dropdown-item" href="../Meat&Poultry/MeatAndPoultry.html">Meat & Poultry</a>
-                    <a class="dropdown-item" href="../Beverages/">Beverages</a>
-                    <a class="dropdown-item" href="../Beer&Wine/beer_wine.html">Beer & Wine</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">More...</a>
-                  </div>
-                </li>
-
-                <a class="nav-link" href="../homePage.html">&nbsp CART &nbsp</a>
-              </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input
-                  class="form-control mr-sm-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button type="button" class="btn btn-warning">Search</button>
-              </form>
+          </li>
+          <a class="nav-link" href="../homePage.html"
+            >&nbsp ALL PRODUCTS &nbsp</a
+          >
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              AISLES
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="../dairy_eggs/dairy_eggs.html"
+                >Dairy & Eggs</a
+              >
+              <a
+                class="dropdown-item"
+                href="../Fruits&Vegetables/fruits_vegetables.html"
+                >Fruits & Vegetables</a
+              >
+              <a class="dropdown-item" href="../seaFood/seafood.html"
+                >Fish & Seafood</a
+              >
+              <a
+                class="dropdown-item"
+                href="../Meat&Poultry/MeatAndPoultry.html"
+                >Meat & Poultry</a
+              >
+              <a class="dropdown-item" href="../Beverages/">Beverages</a>
+              <a class="dropdown-item" href="../Beer&Wine/beer_wine.html"
+                >Beer & Wine</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">More...</a>
             </div>
-          </nav>
-          <div class="main">
-            <div class="row justify-content-center">
-              <div class="col-lg-8">
+          </li>
+
+          <a class="nav-link" href="../homePage.html">&nbsp CART &nbsp</a>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button type="button" class="btn btn-warning">Search</button>
+        </form>
+      </div>
+    </nav>
+    <div class="main">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
           <div class="row product">
             <div class="col-sm align-self-start">
               <img
@@ -127,7 +145,7 @@
             </div>
             <div class="col-sm align-self-start">
               <h3>Brie Cheese</h3>
-              <p>250 g </p>
+              <p>250 g</p>
               <p>$7.99</p>
               <h6>Quantity</h6>
               <div>
@@ -159,9 +177,7 @@
               <br />
               <div class="product_description">
                 <h3>Product description</h3>
-                <p>
-                  High quality soft brie cheese.
-                </p>
+                <p>High quality soft brie cheese.</p>
                 <p>
                   <a
                     class="btn btn-dark"
@@ -183,19 +199,20 @@
         </div>
       </div>
     </div>
-  <!-- Footer -->
-  <div class="footer">
-    <div class="row">
-      <div class="col-sm">
-        <a class="footerText " href="#">ABOUT</a>
-      </div>
-      <div class="col-sm">
-        <a class="footerText " href="#">CONTACT US</a>
-      </div>
-      <div class="col-sm">
-        Copyright &copy Fast groceries. &nbsp; Technical support: (514) 555-1234.
+    <!-- Footer -->
+    <div class="footer">
+      <div class="row">
+        <div class="col-sm">
+          <a class="footerText" href="#">ABOUT</a>
+        </div>
+        <div class="col-sm">
+          <a class="footerText" href="#">CONTACT US</a>
+        </div>
+        <div class="col-sm">
+          Copyright &copy Fast groceries. &nbsp; Technical support: (514)
+          555-1234.
+        </div>
       </div>
     </div>
-  </div>
   </body>
 </html>
