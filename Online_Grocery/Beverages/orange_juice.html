@@ -1,129 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Orange Juice</title>
+    <title>Orange Juice</title>
 
-  <!--  CSS Stylesheets-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
-  <link rel="stylesheet" href="../fastGroceries.css"/>
+    <!--  CSS Stylesheets-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../fastGroceries.css" />
 
-  <!--  Font Awesome-->
-  <script src="https://kit.fontawesome.com/5e7c980afc.js" crossorigin="anonymous"></script>
+    <!--  Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/5e7c980afc.js"
+      crossorigin="anonymous"
+    ></script>
 
-  <!--  Bootstrap Scripts-->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</head>
+    <!--  Bootstrap Scripts-->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <!-- Header-->
     <div class="row">
-        <div class="header col-lg-10 d-none d-sm-block">
-        <img src="../img/tomato.png" class="img-fluid" alt="Responsive image" width="100px">
+      <div class="header col-lg-10 d-none d-sm-block">
+        <img
+          src="../img/tomato.png"
+          class="img-fluid"
+          alt="Responsive image"
+          width="100px"
+        />
         <span class="title navbar-brand">
-            <h1>Fast Groceries</h1>
+          <h1>Fast Groceries</h1>
         </span>
-        </div>
-        <div class="logAccount col-lg-2">
+      </div>
+      <div class="logAccount col-lg-2">
         <a class="login" href="#">Login</a>
         <a class="register" href="#">Register</a>
-        </div>
+      </div>
     </div>
-  
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         Navigation
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+          <li class="nav-item active">
             <a class="nav-link" href="../homePage.html">&nbsp HOME &nbsp</a>
-            </li>
-            <a class="nav-link" href="#">&nbsp ALL PRODUCTS &nbsp</a>
-            <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                AISLES
+          </li>
+          <a class="nav-link" href="#">&nbsp ALL PRODUCTS &nbsp</a>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              AISLES
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="../dairy_eggs/dairy_eggs.html">Dairy & Eggs</a>
-              <a class="dropdown-item" href="../Fruits&Vegetables/fruits_vegetables.html">Fruits & Vegetables</a>
-              <a class="dropdown-item" href="../seaFood/seafood.html">Fish & Seafood</a>
-              <a class="dropdown-item" href="../Meat&Poultry/MeatAndPoultry.html">Meat & Poultry</a>
+              <a class="dropdown-item" href="../dairy_eggs/dairy_eggs.html"
+                >Dairy & Eggs</a
+              >
+              <a
+                class="dropdown-item"
+                href="../Fruits&Vegetables/fruits_vegetables.html"
+                >Fruits & Vegetables</a
+              >
+              <a class="dropdown-item" href="../seaFood/seafood.html"
+                >Fish & Seafood</a
+              >
+              <a
+                class="dropdown-item"
+                href="../Meat&Poultry/MeatAndPoultry.html"
+                >Meat & Poultry</a
+              >
               <a class="dropdown-item" href="../Beverages/">Beverages</a>
-              <a class="dropdown-item" href="../Beer&Wine/beer_wine.html">Beer & Wine</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">More...</a>
+              <a class="dropdown-item" href="../Beer&Wine/beer_wine.html"
+                >Beer & Wine</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">More...</a>
             </div>
-            </li>
-            <a class="nav-link" href="../shopping_cart.html">&nbsp CART &nbsp</a>
+          </li>
+          <a class="nav-link" href="../shopping_cart.html">&nbsp CART &nbsp</a>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button type="button" class="btn btn-warning">Search</button>
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button type="button" class="btn btn-warning">Search</button>
         </form>
-        </div>
+      </div>
     </nav>
 
     <!-- Have navbar and content centered in 2/3 of the screen -->
-    <div class="row justify-content-center" style="padding: 20px;">
+    <div class="row justify-content-center" style="padding: 20px">
       <div class="col-lg-8">
-
         <div class="row product">
-            <div class="col-sm align-self-start">
-              <img class="itemImg img-fluid animated fadeInUp" src="img/juice.png" alt="Almond Milk" width="400"/>
-            </div>
-            <div class="col-sm align-self-start">
-              <h3>1.65L OASIS Pure Orange Juice</h3>
-              <p>Sold individually</p>
-              <p>$4.49/un</p>
-              <h6>Quantity</h6>
-              <div>
-                <div class="def-number-input number-input mb-0 w-100">
-                  <!-- Reduce amount -->
-                  <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"class="minus">-</button>
-                  <input class="quantity" min="0" name="quantity" value="1" type="number"/>
-                  <!-- Increase amount -->
-                  <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus">+</button>
-                </div>
+          <div class="col-sm align-self-start">
+            <img
+              class="itemImg img-fluid animated fadeInUp"
+              src="img/juice.png"
+              alt="Almond Milk"
+              width="400"
+            />
+          </div>
+          <div class="col-sm align-self-start">
+            <h3>1.65L OASIS Pure Orange Juice</h3>
+            <p>Sold individually</p>
+            <p>$4.49/un</p>
+            <h6>Quantity</h6>
+            <div>
+              <div class="def-number-input number-input mb-0 w-100">
+                <!-- Reduce amount -->
+                <button
+                  onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                  class="minus"
+                >
+                  -
+                </button>
+                <input
+                  class="quantity"
+                  min="0"
+                  name="quantity"
+                  value="1"
+                  type="number"
+                />
+                <!-- Increase amount -->
+                <button
+                  onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                  class="plus"
+                >
+                  +
+                </button>
               </div>
-
-              <button type="button" class="btn btn-danger" style="width: auto;">Add to Cart</button>
-              <br />
-              <div class="product_description">
-                <h3>Product description</h3>
-                <p>Juice (with pulp) made from concentrate. High in vitamin-C.</p>
-                <p>
-                  <a class="btn btn-dark" data-toggle="collapse" href="#moreDescription" role="button" aria-expanded="false" aria-controls="collapseExample">More description</a>
-                </p>
-                <div class="collapse" id="moreDescription">
-                  <div class="card card-body">#item No.50002</div>
-                </div>
+            </div>
+            <a href="../shopping_cart.html">
+              <button type="button" class="btn btn-danger" style="width: 30%">
+                Add to Cart
+              </button>
+            </a>
+            <br />
+            <div class="product_description">
+              <h3>Product description</h3>
+              <p>Juice (with pulp) made from concentrate. High in vitamin-C.</p>
+              <p>
+                <a
+                  class="btn btn-dark"
+                  data-toggle="collapse"
+                  href="#moreDescription"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                  >More description</a
+                >
+              </p>
+              <div class="collapse" id="moreDescription">
+                <div class="card card-body">#item No.50002</div>
               </div>
             </div>
-
+          </div>
         </div>
       </div>
     </div>
 
-  <!-- Footer -->
-  <div class="footer">
-    <div class="row">
-      <div class="col-sm">
-        <a class="footerText " href="#">ABOUT</a>
-      </div>
-      <div class="col-sm">
-        <a class="footerText " href="#">CONTACT US</a>
-      </div>
-      <div class="col-sm">
-        Copyright &copy Fast groceries. &nbsp; Technical support: (514) 555-1234.
+    <!-- Footer -->
+    <div class="footer">
+      <div class="row">
+        <div class="col-sm">
+          <a class="footerText" href="#">ABOUT</a>
+        </div>
+        <div class="col-sm">
+          <a class="footerText" href="#">CONTACT US</a>
+        </div>
+        <div class="col-sm">
+          Copyright &copy Fast groceries. &nbsp; Technical support: (514)
+          555-1234.
+        </div>
       </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
