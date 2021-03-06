@@ -48,7 +48,7 @@
             <li class="nav-item active">
             <a class="nav-link" href="../homePage.html">&nbsp HOME &nbsp</a>
             </li>
-            <a class="nav-link" href="#">&nbsp ALL PRODUCTS &nbsp</a>
+            <a class="nav-link" href="../all_products.html">&nbsp ALL PRODUCTS &nbsp</a>
             <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 AISLES
@@ -67,8 +67,8 @@
             <a class="nav-link cart" href="../shopping_cart.html"><i class="fas fa-shopping-cart"></i>&nbsp CART <span>0</span></a>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button type="button" class="btn btn-warning">Search</button>
+          <input id="search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button type="button" class="btn btn-warning" onclick="search_item()">Search</button>
         </form>
         </div>
     </nav>
@@ -86,6 +86,7 @@
 
         <!-- List of products -->
         <!-- First row -->
+        <section id="products" class="content">
         <div class="row">
           <div class="col-sm align-self-start">
             <a href="almond_milk.html">
@@ -140,7 +141,7 @@
             <button type="button" class="btn btn-danger">Add to Cart</button>
           </div>
         </div>
-
+    </section>
       </div>
     </div>
 
