@@ -67,4 +67,21 @@ function totalCost(product){
     localStorage.setItem("totalCost",Math.round((product.price*100)/100));
   }
 }
+
+function search_item() {
+    var input, filter, section, item, name, i, txtValue;
+    input = document.getElementById("search");
+    filter = input.value.toUpperCase();
+    section = document.getElementById("products");
+    item = section.getElementsByClassName("col-sm");
+    for (i = 0; i < item.length; i++) {
+        name = item[i].getElementsByTagName("p")[0];
+        txtValue = name.textContent || name.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            item[i].style.display = "";
+        } else {
+            item[i].style.display = "none";
+        }
+    }
+}
 onLoadCartNumbers();
