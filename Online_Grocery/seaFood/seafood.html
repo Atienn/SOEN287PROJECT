@@ -46,7 +46,7 @@
           <li class="nav-item active">
             <a class="nav-link" href="../homePage.html">&nbsp HOME &nbsp<span class="sr-only">(current)</span></a>
           </li>
-          <a class="nav-link" href="#">&nbsp ALL PRODUCTS &nbsp</a>
+          <a class="nav-link" href="../all_products.html">&nbsp ALL PRODUCTS &nbsp</a>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               AISLES
@@ -66,8 +66,8 @@
 
         </ul>
         <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button type="button" class="btn btn-warning">Search</button>
+          <input id="search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button type="button" class="btn btn-warning" onclick="search_item()">Search</button>
         </form>
       </div>
     </nav>
@@ -76,7 +76,7 @@
   <div class="row justify-content-center">
     <div class="col-lg-8">
       <!--show product category name-->
-      <section class="content">
+      <section id="products" class="content">
         <div class="row">
           <span class="subtitle">
             <h2>Fish & Seafood</h2>
