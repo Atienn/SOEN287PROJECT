@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>users list page</title>
-    <link rel="shortcut icon" href="../img/tomato.png">
-  </head>
-    <!--  CSS Stylesheets-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>users list page</title>
+  <link rel="shortcut icon" href="../img/tomato.png">
+</head>
+<!--  CSS Stylesheets-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="../fastGroceries.css">
 
@@ -19,19 +20,19 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <body>
-<!--header-->
-<div class="row">
-  <div class="header col-lg-10 d-none d-sm-block">
-    <img src="../img/tomato.png" class="img-fluid" alt="Responsive image" width="100px">
-    <span class="title navbar-brand">
-      <h1>Fast Groceries</h1>
-    </span>
+  <!--header-->
+  <div class="row">
+    <div class="header col-lg-10 d-none d-sm-block">
+      <img src="../img/tomato.png" class="img-fluid" alt="Responsive image" width="100px">
+      <span class="title navbar-brand">
+        <h1>Fast Groceries</h1>
+      </span>
+    </div>
+    <div class="logAccount col-lg-2">
+      <a class="login" href="../../Auth/LoginPage.html">Login</a>
+      <a class="register" href="../../Auth/SignUpPage.html">Register</a>
+    </div>
   </div>
-  <div class="logAccount col-lg-2">
-    <a class="login" href="../../Auth/LoginPage.html">Login</a>
-    <a class="register" href="../../Auth/SignUpPage.html">Register</a>
-  </div>
-</div>
 
 
   <!--navigation-->
@@ -46,7 +47,7 @@
           <li class="nav-item active">
             <a class="nav-link" href="../homePage.html">&nbsp HOME &nbsp<span class="sr-only">(current)</span></a>
           </li>
-          <a class="nav-link" href="#">&nbsp ALL PRODUCTS &nbsp</a>
+          <a class="nav-link" href="../all_products.html">&nbsp ALL PRODUCTS &nbsp</a>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               AISLES
@@ -67,92 +68,95 @@
 
 
         </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button type="button" class="btn btn-warning">Search</button>
-          </form>
-        </div>
-        </nav>
+        <form class="form-inline my-2 my-lg-0">
+          <input id="search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button type="button" class="btn btn-warning" onclick="search_item()">Search</button>
+        </form>
+      </div>
+    </nav>
   </div>
 
   <div class="row justify-content-center">
     <div class="col-lg-8">
 
-    <div class="row">
-      <span class="subtitle"><h2>&nbsp Beer & Wine</h2></span>
-    </div>
+      <div class="row">
+        <span class="subtitle">
+          <h2>&nbsp Beer & Wine</h2>
+        </span>
+      </div>
 
-  <!--Items list each row has 3 tiems, Please use SQUARE size image-->
-
-  <div class="row">
-    <div class="col-sm align-self-start">
-      <a href="ChinonWine.html">
-      <img class="itemImg img-fluid animated fadeInUp" src="img/ChinonWine.png" alt="" href="#">
-      <p class="item name">Chinon - Philippe Alliet Wine</p>
-      <p class="item price">$34.00</p>
-      </a>
-      <button type="button" class="btn btn-danger">Add to Cart</button>
-    </div>
-    <div class="col-sm align-self-center">
-      <a href="GalloWine.html">
-      <img class="itemImg img-fluid animated fadeInUp" src="img/GalloWine.png" alt="">
-      <p class="item name">Gallo Family White Zinfandel Wine</p>
-      <p class="item price">$9.95</p>
-      </a>
-        <button type="button" class="btn btn-danger">Add to Cart</button>
-    </div>
-    <div class="col-sm align-self-end">
-      <a href="YellowTailWine.html">
-      <img class="itemImg img-fluid animated fadeInUp" src="img/YellowTailWine.png" alt="">
-      <p class="item name">Yellow Tail Bubbles Wine</p>
-      <p class="item price">$9.99</p>
-      </a>
-        <button type="button" class="btn btn-danger">Add to Cart</button>
-    </div>
-  </div>
-    <!--second row-->
-  <div class="row">
-    <div class="col-sm align-self-start">
-      <a href="BudlightBeer.html">
-      <img class="itemImg img-fluid animated fadeInUp" src="img/BudLightBeer.png" alt="" href="#">
-      <p class="item name">Budlight Beer</p>
-      <p class="item price">$5.00</p>
-      </a>
-        <button type="button" class="btn btn-danger">Add to Cart</button>
-    </div>
-    <div class="col-sm align-self-center">
-      <a href="HeinekenBeer.html">
-      <img class="itemImg img-fluid animated fadeInUp" src="img/HeinekenBeer.png" alt="" href="#" style="width: 450px;">
-      <p class="item name">Heineken Beer</p>
-      <p class="item price">$3.00</p>
-      </a>
-        <button type="button" class="btn btn-danger">Add to Cart</button>
-    </div>
-    <div class="col-sm align-self-end">
-        <a href="CoronaBeer.html">
+      <!--Items list each row has 3 tiems, Please use SQUARE size image-->
+    <section id="products" class="content">
+      <div class="row">
+        <div class="col-sm align-self-start">
+          <a href="ChinonWine.html">
+            <img class="itemImg img-fluid animated fadeInUp" src="img/ChinonWine.png" alt="" href="#">
+            <p class="item name">Chinon - Philippe Alliet Wine</p>
+            <p class="item price">$34.00</p>
+          </a>
+          <button type="button" class="btn btn-danger">Add to Cart</button>
+        </div>
+        <div class="col-sm align-self-center">
+          <a href="GalloWine.html">
+            <img class="itemImg img-fluid animated fadeInUp" src="img/GalloWine.png" alt="">
+            <p class="item name">Gallo Family White Zinfandel Wine</p>
+            <p class="item price">$9.95</p>
+          </a>
+          <button type="button" class="btn btn-danger">Add to Cart</button>
+        </div>
+        <div class="col-sm align-self-end">
+          <a href="YellowTailWine.html">
+            <img class="itemImg img-fluid animated fadeInUp" src="img/YellowTailWine.png" alt="">
+            <p class="item name">Yellow Tail Bubbles Wine</p>
+            <p class="item price">$9.99</p>
+          </a>
+          <button type="button" class="btn btn-danger">Add to Cart</button>
+        </div>
+      </div>
+      <!--second row-->
+      <div class="row">
+        <div class="col-sm align-self-start">
+          <a href="BudlightBeer.html">
+            <img class="itemImg img-fluid animated fadeInUp" src="img/BudLightBeer.png" alt="" href="#">
+            <p class="item name">Budlight Beer</p>
+            <p class="item price">$5.00</p>
+          </a>
+          <button type="button" class="btn btn-danger">Add to Cart</button>
+        </div>
+        <div class="col-sm align-self-center">
+          <a href="HeinekenBeer.html">
+            <img class="itemImg img-fluid animated fadeInUp" src="img/HeinekenBeer.png" alt="" href="#" style="width: 450px;">
+            <p class="item name">Heineken Beer</p>
+            <p class="item price">$3.00</p>
+          </a>
+          <button type="button" class="btn btn-danger">Add to Cart</button>
+        </div>
+        <div class="col-sm align-self-end">
+          <a href="CoronaBeer.html">
             <img class="itemImg img-fluid animated fadeInUp" src="img/CoronaBeer.png" alt="" href="#">
             <p class="item name">Corona Beer</p>
             <p class="item price">$3.50</p>
-        </a>
+          </a>
           <button type="button" class="btn btn-danger">Add to Cart</button>
-    </div>
-  </div>
-</div>
-
-  <!-- Footer -->
-  <div class="footer">
-    <div class="row">
-      <div class="col-sm">
-        <a class="footerText " href="#">ABOUT</a>
-      </div>
-      <div class="col-sm">
-        <a class="footerText " href="#">CONTACT US</a>
-      </div>
-      <div class="col-sm">
-        Copyright &copy Fast groceries. &nbsp; Technical support: (514) 555-1234.
+        </div>
       </div>
     </div>
-</div>
-<script src="../main.js"></script>
+</section>
+    <!-- Footer -->
+    <div class="footer">
+      <div class="row">
+        <div class="col-sm">
+          <a class="footerText " href="#">ABOUT</a>
+        </div>
+        <div class="col-sm">
+          <a class="footerText " href="#">CONTACT US</a>
+        </div>
+        <div class="col-sm">
+          Copyright &copy Fast groceries. &nbsp; Technical support: (514) 555-1234.
+        </div>
+      </div>
+    </div>
+    <script src="../main.js"></script>
 </body>
+
 </html>
