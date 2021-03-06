@@ -1,145 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruits and Vegetables</title>
-    <!--  CSS Stylesheets-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="../fastGroceries.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruits and Vegetables</title>
+  <!--  CSS Stylesheets-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../fastGroceries.css">
 
-    <!--  Font Awesome-->
-    <script src="https://kit.fontawesome.com/5e7c980afc.js" crossorigin="anonymous"></script>
+  <!--  Font Awesome-->
+  <script src="https://kit.fontawesome.com/5e7c980afc.js" crossorigin="anonymous"></script>
 
-    <!--  Bootstrap Scripts-->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!--  Bootstrap Scripts-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
+
 <body>
-<!--header-->
-    <div class="row">
-  <div class="header col-lg-10 d-none d-sm-block">
-    <img src="../img/tomato.png" class="img-fluid" alt="Responsive image" width="100px">
-    <span class="title navbar-brand">
-      <h1>Fast Groceries</h1>
-    </span>
+  <!--header-->
+  <div class="row">
+    <div class="header col-lg-10 d-none d-sm-block">
+      <img src="../img/tomato.png" class="img-fluid" alt="Responsive image" width="100px">
+      <span class="title navbar-brand">
+        <h1>Fast Groceries</h1>
+      </span>
+    </div>
+    <div class="logAccount col-lg-2">
+      <a class="login" href="../../Auth/LoginPage.html">Login</a>
+      <a class="register" href="../../Auth/SignUpPage.html">Register</a>
+    </div>
   </div>
-  <div class="logAccount col-lg-2">
-    <a class="login" href="../../Auth/LoginPage.html">Login</a>
-    <a class="register" href="../../Auth/SignUpPage.html">Register</a>
-  </div>
-</div>
-    <!--body-->
-      <div class="navbarSticky">
-        <nav class="navbar navbar-expand-lg bg-c05555">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span>Navigation</span>
-          </button>
+  <!--body-->
+  <div class="navbarSticky">
+    <nav class="navbar navbar-expand-lg bg-c05555">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span>Navigation</span>
+      </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="../homePage.html">&nbsp HOME &nbsp<span class="sr-only">(current)</span></a>
-              </li>
-              <a class="nav-link" href="#">&nbsp ALL PRODUCTS &nbsp</a>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  AISLES
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="../dairy_eggs/dairy_eggs.html">Dairy & Eggs</a>
-                  <a class="dropdown-item" href="../Fruits&Vegetables/fruits_vegetables.html">Fruits & Vegetables</a>
-                  <a class="dropdown-item" href="../seaFood/seafood.html">Fish & Seafood</a>
-                  <a class="dropdown-item" href="../Meat&Poultry/MeatAndPoultry.html">Meat & Poultry</a>
-                  <a class="dropdown-item" href="../Beverages/">Beverages</a>
-                  <a class="dropdown-item" href="../Beer&Wine/beer_wine.html">Beer & Wine</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">More...</a>
-                </div>
-              </li>
-              <a class="nav-link" href="../shopping_cart.html">&nbsp CART &nbsp</a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="../homePage.html">&nbsp HOME &nbsp<span class="sr-only">(current)</span></a>
+          </li>
+          <a class="nav-link" href="#">&nbsp ALL PRODUCTS &nbsp</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              AISLES
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="../dairy_eggs/dairy_eggs.html">Dairy & Eggs</a>
+              <a class="dropdown-item" href="../Fruits&Vegetables/fruits_vegetables.html">Fruits & Vegetables</a>
+              <a class="dropdown-item" href="../seaFood/seafood.html">Fish & Seafood</a>
+              <a class="dropdown-item" href="../Meat&Poultry/MeatAndPoultry.html">Meat & Poultry</a>
+              <a class="dropdown-item" href="../Beverages/">Beverages</a>
+              <a class="dropdown-item" href="../Beer&Wine/beer_wine.html">Beer & Wine</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">More...</a>
+            </div>
+          </li>
+          <a class="nav-link cart" href="../shopping_cart.html"><i class="fas fa-shopping-cart"></i>&nbsp CART <span>0</span></a>
 
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-              <button type="button" class="btn btn-warning">Search</button>
-            </form>
-          </div>
-        </nav>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button type="button" class="btn btn-warning">Search</button>
+        </form>
       </div>
+    </nav>
+  </div>
 
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-                <!--show product category name-->
-            <section class="content">
-                <div class="row">
-                    <span class="subtitle"><h2>Fruits & Vegetables</h2></span>
-                </div>
-                <!--Items list -->
-                <div class="row">
-                    <div class="col-sm align-self-start">
-                        <a href="fv_lime.html">
-                            <img class="itemImg img-fluid animated fadeInUp" src="img/fruits_vegetable/10001.png" alt="" href="#">
-                        </a>
-                        <p class="item">Lime per unit $0.33</p>
-                        <a href="../shopping_cart.html">
-                          <button type="button" class="btn btn-danger">Add to Cart</button>
-                        </a>
-                    </div>
-                    <div class="col-sm align-self-start">
-                        <a href="fv_banana.html">
-                        <img class="itemImg img-fluid animated fadeInUp" src="img/fruits_vegetable/10002.png" alt="" href="#">
-                        </a>
-                        <p class="item">Banana per unit $0.66</p>
-                        <a href="../shopping_cart.html">
-                          <button type="button" class="btn btn-danger">Add to Cart</button>
-                        </a>
-                    </div>
-                    <div class="col-sm align-self-start">
-                        <a href="fv_apple.html">
-                        <img class="itemImg img-fluid animated fadeInUp" src="img/fruits_vegetable/10003.png" alt="" href="#">
-                        </a>
-                        <p class="item">Apple per unit $0.66</p>
-                        <a href="../shopping_cart.html">
-                          <button type="button" class="btn btn-danger">Add to Cart</button>
-                        </a>
-                    </div>
-                </div>
-                <!--second row-->
-                <div class="row">
-                    <div class="col-sm align-self-start">
-                        <a href="ve_pepper.html">
-                        <img class="itemImg img-fluid animated fadeInUp" src="img/fruits_vegetable/10004.png" alt="" href="#">
-                        </a>
-                        <p class="item">Pepper per unit $0.33</p>
-                        <a href="../shopping_cart.html">
-                          <button type="button" class="btn btn-danger">Add to Cart</button>
-                        </a>
-                    </div>
-                    <div class="col-sm align-self-start">
-                        <a href="ve_broccoli.html">
-                        <img class="itemImg img-fluid animated fadeInUp" src="img/fruits_vegetable/10005.png" alt="" href="#">
-                        </a>
-                        <p class="item">Broccoli per unit $1.78</p>
-                        <a href="../shopping_cart.html">
-                          <button type="button" class="btn btn-danger">Add to Cart</button>
-                        </a>
-                    </div>
-                    <div class="col-sm align-self-start">
-                        <a href="ve_onion.html">
-                        <img class="itemImg img-fluid animated fadeInUp" src="img/fruits_vegetable/10006.png" alt="" href="#">
-                        </a>
-                        <p class="item">Onion per unit $0.50</p>
-                        <a href="../shopping_cart.html">
-                          <button type="button" class="btn btn-danger">Add to Cart</button>
-                        </a>
-                    </div>
-                </div>
-            </section>
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
+      <!--show product category name-->
+      <section class="content">
+        <div class="row">
+          <span class="subtitle">
+            <h2>Fruits & Vegetables</h2>
+          </span>
         </div>
+        <!--Items list -->
+        <div class="row">
+          <div class="col-sm align-self-start">
+            <a href="fv_lime.html">
+              <img class="itemImg img-fluid animated fadeInUp" src="img/fruits_vegetable/10001.png" alt="" href="#">
+            </a>
+            <p class="item name">Lime per unit</p>
+            <p class="item price">$0.33</p>
+            <button type="button" class="btn btn-danger">Add to Cart</button>
+          </div>
+          <div class="col-sm align-self-start">
+            <a href="fv_banana.html">
+              <img class="itemImg img-fluid animated fadeInUp" src="img/fruits_vegetable/10002.png" alt="" href="#">
+            </a>
+            <p class="item name">Banana per unit</p>
+            <p class="item price">$0.66</p>
+            <button type="button" class="btn btn-danger">Add to Cart</button>
+
+          </div>
+          <div class="col-sm align-self-start">
+            <a href="fv_apple.html">
+              <img class="itemImg img-fluid animated fadeInUp" src="img/fruits_vegetable/10003.png" alt="" href="#">
+            </a>
+            <p class="item name">Apple per unit</p>
+            <p class="item price">$0.66</p>
+            <button type="button" class="btn btn-danger">Add to Cart</button>
+
+          </div>
         </div>
-</div>
+        <!--second row-->
+        <div class="row">
+          <div class="col-sm align-self-start">
+            <a href="ve_pepper.html">
+              <img class="itemImg img-fluid animated fadeInUp" src="img/fruits_vegetable/10004.png" alt="" href="#">
+            </a>
+            <p class="item name">Pepper per unit</p>
+            <p class="item price">$0.33</p>
+            <button type="button" class="btn btn-danger">Add to Cart</button>
+
+          </div>
+          <div class="col-sm align-self-start">
+            <a href="ve_broccoli.html">
+              <img class="itemImg img-fluid animated fadeInUp" src="img/fruits_vegetable/10005.png" alt="" href="#">
+            </a>
+            <p class="item name">Broccoli per unit</p>
+            <p class="item price">$1.78</p>
+            <button type="button" class="btn btn-danger">Add to Cart</button>
+
+          </div>
+          <div class="col-sm align-self-start">
+            <a href="ve_onion.html">
+              <img class="itemImg img-fluid animated fadeInUp" src="img/fruits_vegetable/10006.png" alt="" href="#">
+            </a>
+            <p class="item name">Onion per unit</p>
+            <p class="item price">$0.50</p>
+            <button type="button" class="btn btn-danger">Add to Cart</button>
+
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  </div>
   <!-- Footer -->
   <div class="footer">
     <div class="row">
@@ -154,5 +157,6 @@
       </div>
     </div>
   </div>
+  <script src="../main.js"></script>
 </body>
 </html>
