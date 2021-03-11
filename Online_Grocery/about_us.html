@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <!--  CSS Stylesheets-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="fastGroceries.css" />
+
+    <!--  Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/5e7c980afc.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--  Bootstrap Scripts-->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!--header-->
+    <div class="row">
+      <div class="header col-lg-10 d-none d-sm-block">
+        <img
+          src="img/tomato.png"
+          class="img-fluid"
+          alt="Responsive image"
+          width="100px"
+        />
+        <span class="title navbar-brand">
+          <h1>Fast Groceries</h1>
+        </span>
+      </div>
+      <div class="logAccount col-lg-2">
+        <a class="login" href="../../Auth/LoginPage.html">Login</a>
+        <a class="register" href="../../Auth/SignUpPage.html">Register</a>
+      </div>
+    </div>
+    <!--body-->
+    <div class="navbarSticky">
+      <nav class="navbar navbar-expand-lg bg-c05555">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span>Navigation</span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="homePage.html"
+                >&nbsp HOME &nbsp<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <a class="nav-link" href="#">&nbsp ALL PRODUCTS &nbsp</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                AISLES
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="dairy_eggs/dairy_eggs.html"
+                  >Dairy & Eggs</a
+                >
+                <a
+                  class="dropdown-item"
+                  href="Fruits&Vegetables/fruits_vegetables.html"
+                  >Fruits & Vegetables</a
+                >
+                <a class="dropdown-item" href="seaFood/seafood.html"
+                  >Fish & Seafood</a
+                >
+                <a class="dropdown-item" href="Meat&Poultry/MeatAndPoultry.html"
+                  >Meat & Poultry</a
+                >
+                <a class="dropdown-item" href="Beverages/">Beverages</a>
+                <a class="dropdown-item" href="Beer&Wine/beer_wine.html"
+                  >Beer & Wine</a
+                >
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">More...</a>
+              </div>
+            </li>
+            <a class="nav-link cart" href="shopping_cart.html"
+              ><i class="fas fa-shopping-cart"></i>&nbsp CART <span>0</span></a
+            >
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              id="search"
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button
+              type="button"
+              class="btn btn-warning"
+              onclick="search_item()"
+            >
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <!--About Us Body-->
+        <div class="subtitle">
+          <h1>About Us</h1>
+          <br />
+          <h3>History</h3>
+          <p>
+            Fast Groceries is an online grocery store first launched by John Doe
+            and his associates in February 2021. It has greatly expanded in
+            scope since its founding and now offers technical support and Canada
+            wide shipping. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Aenean a est elit. Nunc ut fringilla ligula. Pellentesque ut
+            mollis lorem. Cras dapibus ornare nibh, a molestie metus
+            sollicitudin sit amet. Sed ac nunc at risus accumsan dictum. Duis
+            feugiat purus ut nulla suscipit, id fringilla nisl molestie.
+            Phasellus a neque quis elit ultricies consectetur. Vivamus sed orci
+            vel dolor finibus malesuada. Curabitur diam quam, pulvinar
+            consectetur scelerisque at, efficitur rutrum ex. Morbi hendrerit
+            metus ut neque pulvinar, quis vestibulum leo porta. Maecenas vel est
+            sit amet mi pellentesque malesuada. In vitae lorem ac quam tempus
+            ornare.
+          </p>
+          <br />
+          <h3>Food</h3>
+          <p>
+            Fast Groceries offers a wide variety of typical grocery items, including but not limited to: 
+            <ul>
+              <li>Fresh <a href="seaFood/seafood.html">Fish & Seafood</a></li>
+              <li>A wide variety of <a href="seaFood/beer_wine.html">Alcoholic Beverages</a></li>
+              <li>100% Organic <a href="Fruits&Vegetables/fruits_vegetables.html">Fruits & Vegetables</a></li>
+            </ul>Quisque suscipit consectetur maximus. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. In hac habitasse platea dictumst.
+            Quisque pulvinar metus ut nunc egestas cursus. Phasellus rhoncus
+            elit nisl, a viverra ex convallis ullamcorper. In lobortis urna eget
+            quam interdum iaculis. Nulla sed aliquam magna. Suspendisse auctor
+            vulputate quam. Morbi nec fermentum mauris. Donec a venenatis nulla.
+            Maecenas eleifend, orci ultricies aliquam volutpat, urna neque
+            luctus leo, sit amet fringilla risus turpis vel nisi. Fusce interdum
+            lacus mi, nec porta eros accumsan eget. Nam condimentum metus et
+            nibh vulputate, at tristique purus tempus. Praesent dictum metus at
+            fermentum efficitur.
+          </p>
+          <br />
+          <h3>Team</h3>
+          <p>
+            Fast Groceries' team is made up of compentent software engineers that studied at Concordia's
+            Gina Cody School of Engineering and Computer Science.
+            Pellentesque eleifend dignissim tellus, vel suscipit est pharetra
+            eget. Nullam in congue quam, faucibus ultrices mi. Curabitur eget ex
+            varius, commodo metus eu, fermentum ipsum. Phasellus vel sagittis
+            ex. Sed pulvinar enim ac ultrices sagittis. Ut porta rutrum cursus.
+            Integer lobortis eros ut lacus fringilla feugiat. Proin ut arcu
+            mollis, ullamcorper lectus sollicitudin, malesuada odio. Sed et
+            faucibus odio. Sed cursus urna nisl, id malesuada nunc aliquam a.
+            Phasellus nunc eros, tristique vel feugiat efficitur, bibendum eget
+            urna. Curabitur quis ante lectus. Donec ut auctor ipsum, quis mattis
+            nunc. Mauris quis aliquam nisl, vel placerat diam. Sed mattis purus
+            orci, quis consequat felis tempor id. Quisque a turpis ante.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+      <div class="row">
+        <div class="col-sm">
+          <a class="footerText" href="#">ABOUT</a>
+        </div>
+        <div class="col-sm">
+          <a class="footerText" href="#">CONTACT US</a>
+        </div>
+        <div class="col-sm">
+          Copyright &copy Fast groceries. &nbsp; Technical support: (514)
+          555-1234.
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
