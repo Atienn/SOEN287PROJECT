@@ -56,15 +56,14 @@ window.onload = () => {
 			calcTotalPrice(pageProducts[i]);
 		})
 	}
-	//
-	console.log(localStorage.getItem('User:Cart'));
 
 	//Check if there is already a cart in browser storage.
 	//Only parse the item isn't undefined.
-	if(!localStorage.getItem('User:Cart') == 'undefined') { 
+	if(!(localStorage.getItem('User:Cart') == 'undefined')) { 
 		userCart = JSON.parse(localStorage.getItem('User:Cart'));
 	}
 	//If none exists yet. Create a new empty one.
+	//This will automatically execute if 'User:Cart' in browser storage was undefined.
 	if (!userCart) { resetCart(); }
 
 	//Updates the amount of items in cart shown on the navbar.
@@ -77,7 +76,7 @@ window.onload = () => {
 //Saves the user's cart in browser storage (some browsers might choose not to execute this, should not be relied upon).
 window.onbeforeunload = () => {
 	//Only save the cart if it's not undefined.
-	if(!typeof userCart == 'undefined') { 
+	if(!(typeof userCart == 'undefined')) { 
 		localStorage.setItem('User:Cart', JSON.stringify(userCart));
 	}
 }
@@ -100,9 +99,9 @@ function resetCart() {
 		itemAmount: 0,
 		totalPrice: 0
 	};
-	//Convert the object into a string (required for JSON storage)
-	//and store it under the label 'User:Cart'.
-	localStorage.setItem('User:Cart', JSON.stringify(userCart));
+
+	//Save the changes to the cart.
+	saveCart();
 
 	//Update the number of items in cart displayed.
 	updateItemCount();
@@ -143,8 +142,19 @@ function addItemToCart(product) {
 	//and add the product price to the cart total price.
 	userCart.totalPrice += product.price;
 
+	//Save the changes to the cart.
+	saveCart();
+
 	//Update the number of items in cart displayed.
 	updateItemCount();
+}
+
+/**
+ * Convert 'userCart' into a string (required for JSON storage)
+ * and store in browser storage it under the label 'User:Cart'.
+ */
+function saveCart() {
+	localStorage.setItem('User:Cart', JSON.stringify(userCart));
 }
 
 //#endregion
@@ -214,6 +224,9 @@ function calcTotalPrice() {
 
 	//Replace the totalPrice with the calculated value.
 	userCart.totalPrice = calculatedTotal;
+
+	//Save the changes to the cart.
+	saveCart();
 }
 
 /**
@@ -230,6 +243,9 @@ function calcItemAmount() {
 
 	//Replace the totalPrice with the calculated value.
 	userCart.itemAmount = calculatedAmount;
+
+	//Save the changes to the cart.
+	saveCart();
 }
 
 //#endregion
