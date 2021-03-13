@@ -56,9 +56,14 @@ window.onload = () => {
 			calcTotalPrice(pageProducts[i]);
 		})
 	}
+	//
+	console.log(localStorage.getItem('User:Cart'));
 
 	//Check if there is already a cart in browser storage.
-	userCart = JSON.parse(localStorage.getItem('User:Cart'));
+	//Only parse the item isn't undefined.
+	if(!localStorage.getItem('User:Cart') == 'undefined') { 
+		userCart = JSON.parse(localStorage.getItem('User:Cart'));
+	}
 	//If none exists yet. Create a new empty one.
 	if (!userCart) { resetCart(); }
 
@@ -71,7 +76,10 @@ window.onload = () => {
 //While the page is unloading (in the process of moving to a new one) the anonymous function is called.
 //Saves the user's cart in browser storage (some browsers might choose not to execute this, should not be relied upon).
 window.onbeforeunload = () => {
-	localStorage.setItem('User:Cart', JSON.stringify(userCart));
+	//Only save the cart if it's not undefined.
+	if(!typeof userCart == 'undefined') { 
+		localStorage.setItem('User:Cart', JSON.stringify(userCart));
+	}
 }
 
 //#endregion
