@@ -197,6 +197,10 @@ function updateItemCount() {
 			//...then hide the said product div (only show those who match).
 			productDivs[i].style.display = "none";
 		}
+			else{
+			//...resets the display property back to what it was initially
+			productDivs[i].style.display = "";
+		}
 	}
 }
 
