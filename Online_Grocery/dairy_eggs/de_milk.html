@@ -7,7 +7,6 @@
     <!--  CSS Stylesheets-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../fastGroceries.css">
-    <link rel="stylesheet" href="../css/product_description.css">
 
     <!--  Font Awesome-->
     <script src="https://kit.fontawesome.com/5e7c980afc.js" crossorigin="anonymous"></script>
@@ -63,7 +62,7 @@
                             </div>
                         </li>
 
-                        <a class="nav-link" href="../shopping_cart.html">&nbsp CART &nbsp</a>
+                        <a class="nav-link cart" href="../shopping_cart.html"><i class="fas fa-shopping-cart"></i>&nbsp CART <span>0</span></a>
 
 
                     </ul>
@@ -84,7 +83,7 @@
                 <div class="col-sm align-self-start">
                     <h3>Milk</h3>
                     <p>2L</p>
-                    <p>$4.69/un</p>
+                    <p class="itemPrice">$4.69/un</p>
                     <h6>Quantity</h6>
                     <div>
                         <div class="def-number-input number-input mb-0 w-100">
@@ -115,7 +114,7 @@
                         <button type="button" class="btn btn-danger" style="width: 30%">
                           Add to Cart
                         </button>
-                      </a>
+                          <p>Price: $<span class = "price">4.69</span></p>
                     <br/>
                     <div class="product_description">
                         <h3>Product description</h3>
@@ -152,5 +151,8 @@
       </div>
     </div>
   </div>
+  <script src="../main.js"></script>
+  <script src="../ProductPages.js"></script>
+  <script src="../ProductPriceCalc.js"></script>
 </body>
 </html>
