@@ -1,6 +1,8 @@
 var itemQuantity;
+
 window.addEventListener("load", () => {
-  displayCart();
+  // Display relies on other scripts, but needs to be implemented at the end
+  // displayCart();
   itemQuantity = document.getElementsByClassName("quantity");
 
   for (var i = 0; i < itemQuantity.length; i++) {
@@ -45,8 +47,6 @@ function deliveryDate() {
   deliveryDate.setDate(today.getDate() + 2);
   document.getElementById("dateID").innerHTML = deliveryDate.toDateString();
 }
-
-function updateTax() {}
 
 /**
  * Displays all cart items.
