@@ -115,7 +115,9 @@
               <a class="dropdown-item" href="#">More...</a>
             </div>
           </li>
-          <a class="nav-link" href="../shopping_cart.html">&nbsp CART &nbsp</a>
+          <a class="nav-link cart" href="../shopping_cart.html"
+            ><i class="fas fa-shopping-cart"></i>&nbsp CART <span>0</span></a
+          >
         </ul>
         <form class="form-inline my-2 my-lg-0">
           <input
@@ -144,7 +146,7 @@
           <div class="col-sm align-self-start">
             <h3>750ml PERRIER Carbonated Water</h3>
             <p>Sold individually</p>
-            <p>$5.49/un</p>
+            <p class="itemPrice">$5.49/un</p>
             <h6>Quantity</h6>
             <div>
               <div class="def-number-input number-input mb-0 w-100">
@@ -172,12 +174,12 @@
               </div>
             </div>
             <br />
+            <p>Price: $<span class="itemPrice">5.49</span></p>
+
+            <button type="button" class="btn btn-danger" style="width: 30%">
+              Add to Cart
+            </button>
             <p>Price: $<span class="price">5.49</span></p>
-            <a href="../shopping_cart.html">
-              <button type="button" class="btn btn-danger" style="width: 30%">
-                Add to Cart
-              </button>
-            </a>
             <br />
             <div class="product_description">
               <h3>Product description</h3>
@@ -222,5 +224,6 @@
     </div>
     <script src="../main.js"></script>
     <script src="../ProductPages.js"></script>
+    <script src="../ProductPriceCalc.js"></script>
   </body>
 </html>
