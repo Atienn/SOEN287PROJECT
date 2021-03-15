@@ -11,7 +11,7 @@ window.addEventListener("load", () => {
   currentProduct.price = parseFloat(
     document.querySelector(".itemPrice").innerText.replace("$", "")
   );
-    currentProduct.amount = 0;
+  
   //Select all 'add to cart' buttons on the page.
   cartButton = document.querySelector(".btn-danger");
 
