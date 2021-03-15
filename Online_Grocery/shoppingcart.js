@@ -1,7 +1,3 @@
-function refreshPage() {
-  //ON LOAD -> gets caleld after page
-}
-
 var itemQuantity;
 window.onload = () => {
   itemQuantity = document.getElementsByClassName("quantity");
@@ -16,9 +12,10 @@ window.onload = () => {
 };
 
 function updateSubTotal() {
-  var cartItem = document.getElementsByClassName("itemSubTotalPrice");
+  var cartItem = document.getElementsByClassName("itemPrice");
 
   var subTotal = 0;
+  var itemSubTotal = document.getElementsByClassName("itemSubTotalPrice");
   for (var i = 0; i < cartItem.length; i++) {
     var cartItemSubPrice = cartItem[i].innerHTML;
 
@@ -26,7 +23,12 @@ function updateSubTotal() {
 
     var itemTotal = cartItemSubPrice * quantity;
     subTotal = subTotal + quantity * cartItemSubPrice;
+    itemSubTotal[i] = itemTotal;
+    document.getElementsByClassName("itemSubTotalPrice")[
+      i
+    ].innerHTML = itemTotal.toFixed(2);
   }
+
   document.getElementById("subTotal").innerHTML = "$" + subTotal.toFixed(2);
 
   var tax = subTotal * 0.15;
@@ -42,5 +44,3 @@ function deliveryDate() {
   deliveryDate.setDate(today.getDate() + 2);
   document.getElementById("dateID").innerHTML = deliveryDate.toDateString();
 }
-
-function updateTax() {}
