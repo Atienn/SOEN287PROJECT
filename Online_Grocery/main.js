@@ -1,13 +1,10 @@
+//THIS SCRIPT IS NECESSARY ON EVERY PAGE WITH THE NAVBAR IN ORDER TO SHOW
+//THE NUMBER OF ITEMS IN CART.
+
 //#region VARIABLES
 
-//Array of all 'add to cart' buttons on the page.
-let cartButtons;
-//Array of different products the user could add to cart on the page.
-let pageProducts;
-
-//Object representing the user's cart. Contains the 
+//Object representing the user's cart. Contains each item type within the cart.
 let userCart;
-
 //HTML input field used for the search bar.
 let searchInput;
 
@@ -19,43 +16,11 @@ let searchInput;
 
 //Callback for window load.
 //When the page will have finished loading, the given anonmymous function will execute.
-//Initializes global variables and sets up events listeners.
-window.onload = () => {
+//Initializes user cart.
+window.addEventListener("load", () => {
 
-	//Set an empty array.
-	pageProducts = [];
-	//Select all 'add to cart' buttons on the page. 
-	cartButtons = document.querySelectorAll('.btn-danger');
 	//Select the input field on the navbar.
 	searchInput = document.getElementById("search");
-
-	//Loop through each button (and therefore each product) on the page.
-	for (let i = 0; i < cartButtons.length; i++) {
-
-		//Create a new object holding all values of the element which will be 
-		//used to display it in the cart and add it at the end of the array.
-		pageProducts.push({
-			//Item name.
-			name: document.querySelectorAll('.name')[i].innerText,
-			//Image source.
-			imgSrc: document.querySelectorAll('.itemImg')[i].getAttribute('src'),
-			//Item price.
-			price: parseFloat(document.querySelectorAll('.price')[i].innerText.replace("$", "")),
-			//Number of items in cart. Is set to 1 to simplify the process of adding items to cart.
-			amount: 1
-		});
-
-		//Callback to click event.
-		//If a button is clicked, add the product to cart.
-		cartButtons[i].addEventListener('click', () => {
-			//
-			//updateCartStorage(pageProducts[i]);
-			//Add the product to the browser storage. 
-			addItemToCart(pageProducts[i]);
-			//Recalculate the total cost of the cart.
-			calcTotalPrice(pageProducts[i]);
-		})
-	}
 
 	//Check if there is already a cart in browser storage.
 	//Only parse the item isn't undefined.
@@ -68,7 +33,7 @@ window.onload = () => {
 
 	//Updates the amount of items in cart shown on the navbar.
 	updateItemCount();
-}
+});
 
 
 //Callback before window unload.
@@ -99,48 +64,6 @@ function resetCart() {
 		itemAmount: 0,
 		totalPrice: 0
 	};
-
-	//Save the changes to the cart.
-	saveCart();
-
-	//Update the number of items in cart displayed.
-	updateItemCount();
-}
-
-
-/**
- * Adds an item to the user's cart. Updates the 'itemAmount' and 
- * 'totalPrice' values of the 'userCart' object.
- * @param {Object} product - The product to add to the cart.
- */
-function addItemToCart(product) {
-
-	//The following checks if the item type is already within the cart.
-	//If it is, increment its 'amount' property by 1 instead of adding it again.
-	
-	//Assume that the item type isn't already inside the cart.
-	let insideCart = false;
-
-	//Go through each item present in the cart.
-	userCart.items.forEach(item => {
-		//If the name of the item that of the product being added, then it's a match.
-		if (item.name == product.name) {
-			//Correct our assumption, the item type was within the cart.
-			insideCart = true;
-			//Increase the amount of the item in cart by 1.
-			item.amount++;
-		}
-	});
-	
-	//If the item type wasn't within the cart, then add it to the array.
-	if(!insideCart) {
-		userCart.items.push(product);
-	}
-
-	//Regardless of which happened, up the cart item counter by 1.
-	userCart.itemAmount++;
-	//and add the product price to the cart total price.
-	userCart.totalPrice += product.price;
 
 	//Save the changes to the cart.
 	saveCart();
@@ -250,6 +173,9 @@ function calcItemAmount() {
 
 	//Save the changes to the cart.
 	saveCart();
+
+	//Update the number of items displayed if there was any change.
+	updateItemCount();
 }
 
 //#endregion
@@ -317,4 +243,3 @@ function displayCart() {
 
 
 }
-displayCart();
