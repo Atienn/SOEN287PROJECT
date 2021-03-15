@@ -4,7 +4,7 @@ let currentProduct = {};
 
 window.addEventListener("load", () => {
   //Set an empty array.
-  currentProduct.name = document.getElementsByTagName("title")[0];
+  currentProduct.name = document.getElementsByTagName("title")[0].innerText;
   currentProduct.imgSrc = document
     .querySelector(".itemImg")
     .getAttribute("src");
