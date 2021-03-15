@@ -8,24 +8,31 @@ window.onload = () => {
 
   for (var i = 0; i < itemQuantity.length; i++) {
     itemQuantity[i].onchange = () => {
-      updateSubTotal();
+      updatePrice();
     };
   }
-  updateSubTotal();
+  updatePrice();
   deliveryDate();
 };
 
-function updateSubTotal() {
+function updatePrice() {
   var cartItem = document.getElementsByClassName("itemSubTotalPrice");
+  var cartItemPrice = document.getElementsByClassName("itemSubTotalPrice")
 
   var subTotal = 0;
   for (var i = 0; i < cartItem.length; i++) {
-    var cartItemSubPrice = cartItem[i].innerHTML;
+      
+      var cartUnitPrice = cartItem[i].innerHTML;
+      cartUnitPrice = cartUnitPrice.replace('Price per unit: $','')
 
-    var quantity = itemQuantity[i].value;
+      var cartSubTotalPrice = cartItemPrice[i];
+      
+      var quantity = itemQuantity[i].value
 
-    var itemTotal = cartItemSubPrice * quantity;
-    subTotal = subTotal + quantity * cartItemSubPrice;
+      cartSubTotalPrice.innerHTML = Math.round(cartUnitPrice * quantity * 100) / 100
+
+      var itemTotal = cartItemSubPrice * quantity;
+      subTotal = subTotal + quantity * cartItemSubPrice;
   }
   document.getElementById("subTotal").innerHTML = "$" + subTotal.toFixed(2);
 
