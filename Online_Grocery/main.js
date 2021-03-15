@@ -193,7 +193,9 @@ function addItemToCart(product, amount = 1) {
     if (item.name == product.name) {
       //Correct our assumption, the item type was within the cart.
       insideCart = true;
-      //Increase the amount of the item in cart by 1.
+      if (item.amount == null) {
+        item.amount = 0;
+      }
       item.amount += amount;
     }
   });
