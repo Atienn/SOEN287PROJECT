@@ -62,7 +62,7 @@ function displayCart() {
       <div class="col-md-5 col-lg-3 col-xl-3">
         <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
           <a href="#!">
-            <img class="img-fluid w-100" src="../${cartItems.items[i].imgSrc}" alt="Sample" />
+            <img class="img-fluid w-100" src="${cartItems.items[i].imgSrc}" alt="Sample" />
           </a>
         </div>
       </div>
