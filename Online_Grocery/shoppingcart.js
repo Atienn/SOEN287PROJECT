@@ -71,7 +71,7 @@ function displayCart() {
               <h5>${cartItems.items[i].name}</h5>
               <p class="mb-3 text-muted text-uppercase small">
                               Price per item $<span class="itemPrice"
-                                >2.99</span>
+                                ></span>
               </p>
             </div>
             <div>
