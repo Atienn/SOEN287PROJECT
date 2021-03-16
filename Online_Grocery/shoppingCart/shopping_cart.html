@@ -257,7 +257,7 @@
                     </li>
                   </ul>
 
-                  <button type="button" class="btn btn-primary btn-block" onclick="resetCart() location.reload()">
+                  <button type="button" class="btn btn-primary btn-block"  onClick={() => {this.resetCart();this.location.onload();}}>
                     Checkout
                   </button>
                 </div>
