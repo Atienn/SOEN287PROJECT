@@ -13,6 +13,8 @@ window.addEventListener("load", () => {
 });
 deliveryDate();
 
+console.log(cartItem);
+
 function updateSubTotal() {
   var cartItem = document.getElementsByClassName("itemPrice");
 
@@ -60,7 +62,7 @@ function displayCart() {
       <div class="col-md-5 col-lg-3 col-xl-3">
         <div class="view zoom overlay z-depth-1 rounded mb-3 mb-md-0">
           <a href="#!">
-            <img class="img-fluid w-100" src="${cartItems.items[i].imgSrc}" alt="Sample" />
+            <img class="img-fluid w-100" src="../${cartItems.items[i].imgSrc}" alt="Sample" />
           </a>
         </div>
       </div>
@@ -70,8 +72,7 @@ function displayCart() {
             <div>
               <h5>${cartItems.items[i].name}</h5>
               <p class="mb-3 text-muted text-uppercase small">
-                              Price per item $<span class="itemPrice"
-                                ></span>
+                              Price per item $<span class="itemPrice">${cartItems.items[i].price}</span>
               </p>
             </div>
             <div>
