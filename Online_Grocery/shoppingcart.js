@@ -1,8 +1,7 @@
 var itemQuantity;
 
 window.addEventListener("load", () => {
-  // Display relies on other scripts, but needs to be implemented at the end
-  // displayCart();
+  displayCart();
   itemQuantity = document.getElementsByClassName("quantity");
 
   for (var i = 0; i < itemQuantity.length; i++) {
@@ -11,8 +10,8 @@ window.addEventListener("load", () => {
     };
   }
   updateSubTotal();
-  deliveryDate();
 });
+deliveryDate();
 
 function updateSubTotal() {
   var cartItem = document.getElementsByClassName("itemPrice");
@@ -71,13 +70,8 @@ function displayCart() {
             <div>
               <h5>${cartItems.items[i].name}</h5>
               <p class="mb-3 text-muted text-uppercase small">
-                IMPORTED FROM: USA
-              </p>
-              <p class="mb-2 text-muted text-uppercase small">
-                Item 2432
-              </p>
-              <p class="mb-3 text-muted text-uppercase small">
-                Weight: 150 g
+                              Price per item $<span class="itemPrice"
+                                >2.99</span>
               </p>
             </div>
             <div>
