@@ -22,7 +22,6 @@ window.addEventListener("load", () => {
   cartButton.addEventListener("click", () => {
     //updateCartStorage(pageProducts[i]);
     //Add the product to the browser storage.
-    console.log(document.querySelector(".quantity"));
     addItemToCart(
       currentProduct,
       parseInt(document.querySelector(".quantity").value)
