@@ -13,8 +13,6 @@ window.addEventListener("load", () => {
 });
 deliveryDate();
 
-console.log(cartItem);
-
 function updateSubTotal() {
   var cartItem = document.getElementsByClassName("itemPrice");
 
