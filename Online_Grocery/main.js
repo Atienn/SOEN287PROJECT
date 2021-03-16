@@ -202,6 +202,7 @@ function addItemToCart(product, amount = 1) {
 
   //If the item type wasn't within the cart, then add it to the array.
   if (!insideCart) {
+    product.amount = amount;
     userCart.items.push(product);
   }
 
