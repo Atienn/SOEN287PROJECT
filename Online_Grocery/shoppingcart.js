@@ -87,7 +87,8 @@ function displayCart() {
           </div>
           <div class="d-flex justify-content-between align-items-center">
             <div>
-              <a href="#!" type="button" class="card-link-secondary small text-uppercase mr-3"><i class="fas fa-trash-alt mr-1"></i> Remove item
+              <a href="#!" type="button" class="card-link-secondary small text-uppercase mr-3"><i class="fas fa-trash-alt mr-1" onclick="removeItemFromCart('${cartItems.items[i].name}',${cartItems.items[i].amount})">
+              </i> Remove item
               </a>
             </div>
             <strong>Price per item: $<strong class="itemSubTotalPrice">${cartItems.items[i].price}</strong></strong>
@@ -95,5 +96,26 @@ function displayCart() {
         </div>
       </div>
     </div>`;
+  }
+}
+
+function removeItemFromCart(name,amount) {
+
+    for (var i = 0; i < userCart.items.length; i++)  {
+    if (userCart.items[i].name === name) {
+        userCart.totalPrice -= userCart.items[i].price * amount;
+        userCart.items[i].amount = 0;
+
+        if (userCart.items[i].amount  === 0) {
+            userCart.items.splice(i, 1); // removes item from the array
+        }
+      userCart.itemAmount -= amount;
+
+      saveCart();
+      updateItemCount();
+      displayCart();
+      updateSubTotal();
+      return;
+    }
   }
 }
